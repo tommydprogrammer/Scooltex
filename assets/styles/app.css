@@ -2,92 +2,198 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: sans-serif;
+:root {
+  --header-padding: 0 8rem;
 }
 
 body {
+  background-color: rgb(242, 242, 242);
   margin: 0;
+  text-align: center;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 4rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: rgb(255, 255, 255) solid;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+  padding-top: 2rem;
+
+}
+
+.topmost-bar {
+  position: relative;
+  vertical-align: middle;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: 'empty search-bar nav-icon';
   align-items: center;
-  background: #540075;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
 }
 
-header h1 {
-  color: white;
-  font-size: 2rem;
+.search-bar {
+  height: 49px;
+  width: 552px;
+  max-width: 42rem;
+  border-radius: 25px;
+  /* border: 1px rgb(112, 112, 112); */
+  border-color: rgb(112, 112,112);
+  border-width: 1px;
+  padding: 1rem;
+  grid-area: search-bar;
+  justify-self: center;
 }
 
-button {
-  background: #540075;
-  color: white;
-  border: 1px solid #540075;
-  border-radius: 5px;
-  padding: 0.5rem 2rem;
-  font: inherit;
-  cursor: pointer;
+
+
+#nav-icon {
+  /* color: transparent; */
+  background-color: transparent;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  margin: auto 0;
+  grid-area: nav-icon;
+  /* align-self: center; */
+  /* margin: auto 0; */
 }
 
-button:focus {
-  outline: none;
+h1 {
+  color: rgb(255, 88, 88);
 }
 
-button:hover,
-button:active {
-  background: #790fa3;
-  border-color: #790fa3;
+#nav-icon hr {
+  border: solid;
+  border-width: 1.5px;
+  color: rgb(112, 112, 112);
+
 }
 
-.cart {
-  margin: 5rem 2rem;
-  border: 2px solid #540075;
-  border-radius: 10px;
-  padding: 2rem;
+.main-nav-list {
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  padding: var(--header-padding);
 }
 
-.cart h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #540075;
+#nav-list {
+  border-top: 0.2px solid rgb(112, 112, 112);
+  color: rgb(112, 112, 112);
+}
+
+/************* Intro  *************/
+.intro {
+  display: flex;
+  padding: 0 10%;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.intro-text h4 {
+  font-size: 0.5rem;
+}
+
+.intro-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+}
+
+.item.active {
+  display: block;
+}
+
+
+.item img {
+  width: 100%;
+}
+
+.item {
+  display: none;
+  max-width: 650px;
+}
+
+.order-btn {
+  width: 11rem;
+  height: 3rem;
+  border-radius: 15px;
+  background-color: rgb(255, 88, 88);
+  border: none;
+}
+
+/************* Product  *************/
+#products {
+  padding: var(--header-padding);
+  margin: 6rem 0;
 }
 
 .product-list {
-  list-style: none;
-  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5.3rem;
   padding: 0;
+  height: 31rem;
+ 
 }
 
 .product-item {
-  margin: 2rem auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  width: 50rem;
-  max-width: 90%;
+  /* width: 100%; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .product-item img {
   width: 100%;
-  height: 20rem;
-  object-fit: cover;
 }
 
-.product-item__content {
-  padding: 1rem;
-  text-align: center;
+.brand-id {
+  width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.product-item h2,
-.product-item h3 {
-  margin: 0 0 1rem 0;
+.product-list li:last-of-type h3 {
+  padding-top: 1rem;
+}
+
+.product-item span h3 {
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+.product-item h2, .product-item h3 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-illustration {
+  margin-top: 20px;
+}
+
+.special-offer {
+  color: rgb(255, 88, 88);
 }
