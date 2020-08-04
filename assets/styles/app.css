@@ -1,9 +1,18 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
   --header-padding: 0 8rem;
+}
+
+p, h2, h2 {
+  line-height: 1.5;
+}
+
+.content {
+  padding-top: 60px;
 }
 
 body {
@@ -11,6 +20,8 @@ body {
   margin: 0;
   text-align: center;
 }
+
+
 
 header {
   background-color: rgb(255, 255, 255);
@@ -43,7 +54,14 @@ header {
   justify-self: center;
 }
 
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: rgb(255, 255, 255) solid;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+}
 
 #nav-icon {
   /* color: transparent; */
@@ -63,6 +81,10 @@ header {
 
 h1 {
   color: rgb(255, 88, 88);
+}
+
+a {
+  text-decoration: none;
 }
 
 #nav-icon hr {
