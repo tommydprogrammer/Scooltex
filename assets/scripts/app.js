@@ -1,8 +1,7 @@
 // Make navbar sticky
 
 let navbar = document.getElementById("nav-list");
-console.log(navbar.innerHTML)
-alert('hey')
+
 let sticky = navbar.offsetTop;
 
 const stickyNavHandler = () => {
