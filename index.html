@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/styles/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <!-- Scripts -->
     <script src="assets/scripts/app.js" defer></script>
     <title>Document</title>
 </head>
@@ -24,13 +26,13 @@
        <a href="#"><h1>Scooltec</h1></a>
         <nav id="nav-list">
             <ul class="main-nav-list">
-                <li>Home</li>
-                <li>Restaurant</li>
-                <li>Clothes</li>
-                <li>Technology</li>
-                <li>Lifestyle</li>
-                <li>Hypermarket</li>
-                <li>Beauty</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Hypermarket</a></li>
+                <li><a href="#">Beauty</a></li>
             </ul>
         </nav>
     </header>
@@ -58,32 +60,60 @@
                     
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="item active">
+                        <div class="carousel-item active">
                             <img src="assets/images/Image_1.png" alt="Product Image">
                         </div>
                         
-                        <div class="item">
-                            <img src="assets/images/Image_1.png" alt="Chicago" style="width:100%;">
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_5@2x.png" alt="Chicago" style="width:100%;">
                         </div>
                         
-                      <div class="item">
-                          <img src="assets/images/Image_1.png" alt="New york" style="width:100%;">
+                      <div class="carousel-item">
+                          <img src="assets/images/Image_7@2x.png" alt="New york" style="width:100%;">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_8@2x.png" alt="Product Image">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_8@2x.png" alt="Chicago" style="width:100%;">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_1.png" alt="Product Image">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_5@2x.png" alt="Chicago" style="width:100%;">
+                        </div>
+                        
+                      <div class="carousel-item">
+                          <img src="assets/images/Image_7@2x.png" alt="New york" style="width:100%;">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_8@2x.png" alt="Product Image">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="assets/images/Image_8@2x.png" alt="Chicago" style="width:100%;">
                         </div>
                     </div>
                     
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                      <li data-target="#myCarousel" data-slide-to="3"></li>
-                      <li data-target="#myCarousel" data-slide-to="4"></li>
-                      <li data-target="#myCarousel" data-slide-to="5"></li>
-                      <li data-target="#myCarousel" data-slide-to="6"></li>
-                      <li data-target="#myCarousel" data-slide-to="7"></li>
-                      <li data-target="#myCarousel" data-slide-to="8"></li>
-                      <li data-target="#myCarousel" data-slide-to="9"></li>
+                    <div class="carousel-indicators">
+                      <button class="indicator active" id="0" data-slide-to="0"></button>
+                      <button class="indicator" id="1" data-slide-to="1"></button>
+                      <button class="indicator" id="2" data-slide-to="2"></button>
+                      <button class="indicator" id="3" data-slide-to="3"></button>
+                      <button class="indicator" id="4" data-slide-to="4"></button>
+                      <button class="indicator" id="5" data-slide-to="5"></button>
+                      <button class="indicator" id="6" data-slide-to="6"></button>
+                      <button class="indicator" id="7" data-slide-to="7"></button>
+                      <button class="indicator" id="8" data-slide-to="8"></button>
+                      <button class="indicator" id="9" data-slide-to="9"></button>
 
-                    </ol>
+                    </div>
 
                     <!-- Left and right controls -->
                     <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
