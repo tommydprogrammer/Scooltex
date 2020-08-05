@@ -377,7 +377,14 @@ footer {
 .contact {
   position: absolute;
   right: 25px;
-  top: 0;
+  top: -32px;
+}
+
+.contact img {
+  height: 2rem;
+  color: #ffffff;
+  /* background-color: #ffffff; */
+  margin: 1rem;
 }
 
 .footer-nav {
@@ -414,4 +421,12 @@ footer {
 
 .footer-nav ul  li {
   margin-left: 3rem;
+}
+
+.footer-nav ul li a {
+  /* font: inherit; */
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+
 }
