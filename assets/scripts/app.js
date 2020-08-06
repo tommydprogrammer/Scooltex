@@ -31,6 +31,11 @@ var currentSlide = 1;
 let interval
 
 function showSlide(slideIndex, clicked) {
+  console.log(currentSlide);
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+    console.log('reset')
+  }
   if (clicked) {
     clearInterval(interval)
   }
@@ -59,3 +64,28 @@ window.onload = function () {
     });
   });
 };
+
+
+// Side navigation bar handler 
+
+const nav = document.querySelector('.side-nav');
+const navIcon = document.getElementById('nav-icon')
+const closeNavBtn = document.querySelector('.close-nav-btn');
+const overlay = document.getElementById('overlay');
+
+const navBtnHandler = () => {
+  console.log(nav)
+  nav.classList.add('display-nav')
+  navIcon.style.display = 'none'
+  overlay.style.position = 'fixed'
+}
+
+const closeNavBtnHandler = () => {
+  nav.classList.remove('display-nav');
+  navIcon.style.display = 'block'
+  overlay.style.position  = 'static'
+}
+
+navIcon.addEventListener('click', navBtnHandler)
+closeNavBtn.addEventListener('click', closeNavBtnHandler)
+overlay.addEventListener('click', closeNavBtnHandler)
