@@ -23,6 +23,7 @@ body {
   background-color: rgb(242, 242, 242);
   margin: 0;
   text-align: center;
+  width: 100%;
 }
 
 main {
@@ -437,7 +438,6 @@ footer {
 }
 
 .footer-nav ul li a {
-  /* font: inherit; */
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
