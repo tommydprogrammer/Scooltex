@@ -1,13 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
   --header-padding: 0 4rem;
+  --grey-text-color: rgb(112, 112, 112);
+  --red-color: rgb(255, 88, 88);
 }
 
-p, h2, h2 {
+p,
+h2,
+h2 {
   line-height: 1.5;
 }
 
@@ -22,14 +26,12 @@ body {
 }
 
 main {
-  padding:0 4rem;
+  padding: 0 4rem;
   padding-bottom: 20rem;
 }
 
-
 header {
   background-color: rgb(255, 255, 255);
-  /* border-bottom: rgb(255, 255, 255) solid; */
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
   padding-top: 2rem;
 }
@@ -40,7 +42,7 @@ header {
   padding: 0 4rem;
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-areas: 'empty search-bar nav-icon';
+  grid-template-areas: "empty search-bar nav-icon";
   align-items: center;
 }
 
@@ -49,7 +51,7 @@ header {
   width: 552px;
   max-width: 42rem;
   border-radius: 25px;
-  border-color: #DBDBDB;
+  border-color: #dbdbdb;
   border-width: 1px;
   padding: 1rem;
   grid-area: search-bar;
@@ -69,7 +71,6 @@ header {
 }
 
 #nav-icon {
-  /* color: transparent; */
   background-color: transparent;
   border: 0;
   width: 2rem;
@@ -77,18 +78,17 @@ header {
   appearance: none;
   position: absolute;
   right: 0;
-  /* margin: auto 0; */
   grid-area: nav-icon;
   z-index: 500;
-  color: rgb(112, 112, 112);
+  color: var(--grey-text-color);
 }
 
 #nav-icon:hover {
-  color: rgb(255, 88, 88);
+  color: var(--red-color);
 }
 
 h1 {
-  color: rgb(255, 88, 88);
+  color: var(--red-color);
 }
 
 a {
@@ -98,12 +98,7 @@ a {
 #nav-icon hr {
   border: solid;
   border-width: 1.5px;
-  /* color: rgb(112, 112, 112); */
 }
-
-/* #nav-icon hr:hover {
-  color: rgb(255, 88, 88);
-} */
 
 .main-nav-list {
   display: flex;
@@ -116,34 +111,30 @@ a {
 }
 
 #nav-list {
-  border-top: 0.2px solid #DBDBDB;
-  color: rgb(112, 112, 112);
+  border-top: 0.2px solid #dbdbdb;
+  color: var(--grey-text-color);
   z-index: 300;
 }
 
 .main-nav-list li {
   height: 100%;
   width: 14%;
-  /* padding: 0 2.2rem ; */
-  /* text-align: center; */
-  /* vertical-align: middle; */
 }
 
-.main-nav-list li:hover, .main-nav-list li a:hover {
-  background-color: rgb(255, 88, 88);
+.main-nav-list li:hover,
+.main-nav-list li a:hover {
+  background-color: var(--red-color);
   color: #ffffff;
 }
 
 .main-nav-list li a {
-  color: rgb(112, 112, 112);
+  color: var(--grey-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-/* margin: auto 0; */
 }
-
 
 /************* Side nav  *************/
 .side-nav {
@@ -165,7 +156,7 @@ a {
 .display-nav {
   width: 17rem;
   padding: 1rem 2.5rem;
-  border: 0.2px solid #DBDBDB;
+  border: 0.2px solid #dbdbdb;
   overflow-x: visible;
 }
 
@@ -176,46 +167,46 @@ a {
   display: flex;
   align-items: center;
   font-weight: 500;
-  color: rgb(112, 112, 112);
+  color: var(--grey-text-color);
 }
 
 .side-nav a:hover {
-  color: rgb(255, 88, 88);
+  color: var(--red-color);
 }
 
-a.side-nav__register, a.side-nav__login {
+a.side-nav__register,
+a.side-nav__login {
   padding: 0 1.3rem;
   width: 100%;
   height: 3rem;
   border-radius: 15px;
 }
 
-a.side-nav__register{
+a.side-nav__register {
   color: #ffffff;
-  background-color: rgb(255, 88, 88);
+  background-color: var(--red-color);
 }
 
 a.side-nav__register:hover {
-  border: 1px solid rgb(255, 88, 88);
-  color: rgb(255, 88, 88);
+  border: 1px solid var(--red-color);
+  color: var(--red-color);
   background-color: transparent;
 }
 
 a.side-nav__login:hover {
   color: #ffffff;
-  background-color: rgb(255, 88, 88);
+  background-color: var(--red-color);
 }
 
 a.side-nav__login {
-  border: 1px solid rgb(255, 88, 88);
-  color: rgb(255, 88, 88);
+  border: 1px solid var(--red-color);
+  color: var(--red-color);
 }
 
 a.side-nav__myaccount svg {
   height: 70%;
   position: relative;
   right: -7rem;
-  /* fill: rgb(112, 112, 112); */
 }
 
 button.close-nav-btn {
@@ -226,13 +217,13 @@ button.close-nav-btn {
   position: absolute;
   right: -7.5rem;
   top: 0;
-  border: 0.2px solid #DBDBDB;
-  color: rgb(112, 112, 112);
+  border: 0.2px solid #dbdbdb;
+  color: var(--grey-text-color);
   transition: 0.5s;
 }
 
 button.close-nav-btn:hover {
-  background-color: rgb(255, 88, 88);
+  background-color: var(--red-color);
   color: #ffffff;
 }
 
@@ -253,7 +244,6 @@ button.close-nav-btn svg {
   /* padding: 0 10%; */
   /* width: 70%; */
   margin: 3rem 0;
-  
 }
 
 .intro-wrap {
@@ -300,20 +290,19 @@ button.close-nav-btn svg {
   border: none;
 }
 
-.carousel-control img { 
+.carousel-control img {
   width: 20px;
   /* z-index: -100; */
 }
 
 .carousel-indicators button.active {
-  background-color: rgb(255, 88, 88);
+  background-color: var(--red-color);
 }
 
 .carousel-item.active {
   display: flex;
   animation: fade 1.5s;
 }
-
 
 .carousel-item img {
   width: 100%;
@@ -326,17 +315,25 @@ button.close-nav-btn svg {
 
 /* animation css for carousel children */
 @keyframes fade {
-  from { opacity: 0.4; }
-  to { opacity: 1; }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .btn {
-  background-color: rgb(255, 88, 88);
+  background-color: var(--red-color);
   border: none;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.16);
+}
+
+.btn:hover {
+  background-color: rgb(223, 54, 54);
 }
 
 button:focus {
@@ -349,119 +346,20 @@ button:focus {
   border-radius: 15px;
 }
 
-/************* Product  *************/
-#products {
-  padding: var(--header-padding);
-  margin: 6rem 0;
-}
-
-.product-list {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5.3rem;
-  padding: 0;
-  height: 32rem;
- 
-}
-
-.product-item {
-  /* width: 100%; */
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-
-.product-item img {
-  width: 100%;
-}
-
-.brand-id {
-  width: 5.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand-id img {
-  width: 3rem;
-  z-index: -100;
-}
-
-#dell .brand-id img {
-  position: relative;
-  left: -5px;
-}
-
-#levi .brand-id img {
-  width: 5rem;
-  position: relative;
-  left: -19px;
-}
-
-.brand-id h3 {
-  font-size: 0.8rem;
-  color: rgb(112, 112, 112);;
-}
-
-.product-list li:last-of-type h3 {
-  padding-top: 1rem;
-}
-
-/* .product-item span h3 {
-  font-size: 0.9rem;
-} */
-
-.hidden {
-  display: none;
-}
-.product-item h2, .product-item h3 {
-  margin: 0;
-}
-
-h2 {
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.product-illustration {
-  margin-top: 20px;
-}
-
-.special-offer {
-  color: rgb(255, 88, 88);
-}
-
-
-
-
-
 /************* User access  *************/
 
 #user-access {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 18rem;
-  grid-template-areas: 'login register';
+  grid-template-areas: "login register";
   padding: 0 2.5rem;
 }
-
-
 
 #user-access h2 {
   text-align: left;
   font-size: 1.9rem;
-  color: rgb(255, 88, 88);
-
+  color: var(--red-color);
 }
 
 .login {
@@ -476,7 +374,6 @@ h3 {
   width: 13rem;
   height: 4rem;
   border-radius: 15px;
-
 }
 
 .privacy {
@@ -485,8 +382,8 @@ h3 {
 }
 
 footer {
-  padding:3rem 0 0 0;
-  background-color: rgb(255, 88, 88);
+  padding: 3rem 0 0 0;
+  background-color: var(--red-color);
   color: #ffffff;
   /* text-align: center; */
 }
@@ -527,7 +424,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #ffffff;
-  
 }
 
 .footer-nav ul {
@@ -536,7 +432,7 @@ footer {
   display: flex;
 }
 
-.footer-nav ul  li {
+.footer-nav ul li {
   margin-left: 3rem;
 }
 
@@ -545,5 +441,4 @@ footer {
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
-
 }

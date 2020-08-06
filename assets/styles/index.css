@@ -1,0 +1,93 @@
+
+/* //cut */
+
+
+/************* Product  *************/
+#products {
+  padding: var(--header-padding);
+  margin: 6rem 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5.3rem;
+  padding: 0;
+  height: 32rem;
+ 
+}
+
+.product-item {
+  /* width: 100%; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.product-item img {
+  width: 100%;
+}
+
+.brand-id {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-id img {
+  width: 3rem;
+  z-index: -100;
+}
+
+#dell .brand-id img {
+  position: relative;
+  left: -5px;
+}
+
+#levi .brand-id img {
+  width: 5rem;
+  position: relative;
+  left: -19px;
+}
+
+.brand-id h3 {
+  font-size: 0.8rem;
+  color: var(--grey-text-color);
+}
+
+.product-list li:last-of-type h3 {
+  padding-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+.product-item h2, .product-item h3 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.product-illustration {
+  margin-top: 20px;
+}
+
+.special-offer {
+  color: var(--red-color);
+}
+
+
