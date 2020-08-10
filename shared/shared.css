@@ -112,9 +112,11 @@ a {
 }
 
 #nav-list {
-  border-top: 0.2px solid #dbdbdb;
+  border: 0.2px solid #dbdbdb;
   color: var(--grey-text-color);
   z-index: 300;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .main-nav-list li {
@@ -152,6 +154,11 @@ a {
   top: 2rem;
   z-index: 1000;
   transition: 0.5s;
+}
+
+.side-nav span {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .display-nav {
