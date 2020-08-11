@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../shared/shared.css">
+    <link rel="stylesheet" href="registernlogin.css">
+    <!-- Scripts -->
+    <script src="../shared/sharedscript.js" defer></script>
+    <script src="register.js" defer></script>
+    <title>Scooltec</title>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <nav class="side-nav">
+        <span>
+            <a class="side-nav__register" href="register.html">Register</a>
+            <a class="side-nav__login" href="login.html">Login</a>
+            <div class="side-nav-nav">
+                <a class="side-nav__myaccount" href="#">My account <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a>
+                <a href="#">Support</a>
+            </div>
+            <div class="my-account-nav"> 
+                <a class="close-account-nav" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg > back</a>
+                <a href="#">Scooltec ID</a>
+                <a href="#">Notification</a>
+                <a href="#">Account details</a>
+                <a href="#">PRO<svg class="green-check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></a>
+                <a href="#">Log Out</a>
+            </div>
+        </span>
+        <button class="close-nav-btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+        </button>
+    </nav>
+    <header>
+        <div class="topmost-bar">
+            <input class="search-bar" type="text" placeholder="Search...">
+            <button id="nav-icon">
+                <hr>
+                <hr>
+                <hr>
+            </button>
+        </div>
+       <a href="#"><h1>Scooltec</h1></a>
+        <nav id="nav-list">
+            <ul class="main-nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../resturant/resturant.html">Restaurant</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Hypermarket</a></li>
+                <li><a href="#">Beauty</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="reg-log-heading">Join Scooltec now</h1>
+        <p>Study at college, sixth form or university? Get student discounts on all your favorite brands</p>
+
+        <form action="">
+            <input type="email" name="user-email" id="user-email" placeholder="Email address">
+            <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email">
+            <input type="password" name="user-password" id="user-password" placeholder="Password" >
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+            <input type="date" name="date-of-birth" id="date-of-birth" placeholder="Date of birth:">
+            <div class="checkbox">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I accept the UNIDAYS Terms of Service and have <br>
+                     read and understood the Privacy Policy and Cookie Policy. <br>
+                      I confirm that I'm 16 years of age or older.</label>
+            </div>
+        
+            <div class="encrypt-info">
+                <svg fill="#000000" class="lock-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 12 1 C 8.6761905 1 6 3.6761905 6 7 L 6 8 C 4.9 8 4 8.9 4 10 L 4 20 C 4 21.1 4.9 22 6 22 L 18 22 C 19.1 22 20 21.1 20 20 L 20 10 C 20 8.9 19.1 8 18 8 L 18 7 C 18 3.6761905 15.32381 1 12 1 z M 12 3 C 14.27619 3 16 4.7238095 16 7 L 16 8 L 8 8 L 8 7 C 8 4.7238095 9.7238095 3 12 3 z M 12 13 C 13.1 13 14 13.9 14 15 C 14 16.1 13.1 17 12 17 C 10.9 17 10 16.1 10 15 C 10 13.9 10.9 13 12 13 z"/></svg>
+                <p>All information is encrypted</p>
+            </div>
+            
+            <div class="recaptcha-check">
+                <img src="" alt="">
+            </div>
+            <input class="join-now" type="submit" value="Join now">
+            </form>
+            <button class="login">
+                <a href="login.html">Login</a>
+            </button>
+            <!-- <input class="login" type="button" value="Login">     -->
+       
+    </main>
+    
+    
+    <footer>
+        <nav class="footer-nav">
+            <ul class="more">
+                <li><a href="#">ANPC</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <address class="contact">
+                <img src="../assets/images/icons/facebook-f-brands.svg" alt="">
+                <img src="../assets/images/icons/instagram-brands.svg" alt="">
+                <address>ask@scooltec.com</address>
+            </address>
+        </nav>
+        <nav class="footer-nav copywright">
+            <p>Scooltec &copy <template>year</template>. All right reserved</p>
+            <span>
+                <ul>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Private Policy</a></li>
+                </ul>
+            </span>
+        </nav>
+    </footer>
+    
+</body>
+</html>

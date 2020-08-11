@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 :root {
@@ -169,7 +170,7 @@ a {
 }
 
 .side-nav a {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   width: 100%;
   height: 2rem;
   display: flex;
@@ -214,8 +215,9 @@ a.side-nav__login {
 a.side-nav__myaccount svg {
   height: 70%;
   position: relative;
-  right: -7rem;
+  right: -6rem;
 }
+
 
 button.close-nav-btn {
   width: 6rem;
@@ -237,6 +239,38 @@ button.close-nav-btn:hover {
 
 button.close-nav-btn svg {
   height: 50%;
+}
+
+.my-account-nav {
+  display: none;
+}
+
+.open-account-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(16px);
+}
+
+.open-account-nav a {
+  margin: 0;
+}
+
+.my-account-nav a:first-child {
+  position: relative;
+}
+
+.close-account-nav svg {
+  width: 12px;
+  transform: rotate(180deg);
+  position: absolute;
+  left: -18px;
+}
+
+.green-check {
+  color: rgb(0, 147, 0);
+  width: 18px;
+  margin-left: 6px;
 }
 
 #overlay {
@@ -358,6 +392,10 @@ button.close-nav-btn svg {
 
 .btn:hover {
   background-color: rgb(223, 54, 54);
+}
+
+.btn:active {
+  background-color: var(--red-color);
 }
 
 button:focus {

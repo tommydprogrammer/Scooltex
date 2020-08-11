@@ -20,72 +20,93 @@ window.onscroll = function () {
 };
 
 //Carousel Logic
-
-const indicators = document.querySelectorAll(".indicator");
-const slides = document.querySelectorAll(".carousel-item");
-let activeCarousel = document.querySelector(".carousel-item.active");
-let activeIndicator = document.querySelector(".indicator.active");
-console.log(activeCarousel);
+const carousel = {
+  indicators: document.querySelectorAll(".indicator"),
+  slides: document.querySelectorAll(".carousel-item"),
+  activeCarousel: document.querySelector(".carousel-item.active"),
+  activeIndicator: document.querySelector(".indicator.active"),
+};
+console.log(carousel.activeCarousel);
 
 var currentSlide = 1;
-let interval
+let interval;
 
 function showSlide(slideIndex, clicked) {
   console.log(currentSlide);
-  if (currentSlide >= slides.length) {
+  if (currentSlide >= carousel.slides.length) {
     currentSlide = 0;
-    console.log('reset')
+    console.log("reset");
   }
   if (clicked) {
-    clearInterval(interval)
+    clearInterval(interval);
   }
-  activeCarousel.classList.remove("active");
-  activeIndicator.classList.remove("active")
+  carousel.activeCarousel.classList.remove("active");
+  carousel.activeIndicator.classList.remove("active");
 
-  slides[currentSlide].classList.add("active");
-  indicators[currentSlide].classList.add("active")
+  carousel.slides[currentSlide].classList.add("active");
+  carousel.indicators[currentSlide].classList.add("active");
 
-  activeCarousel = slides[currentSlide];
-  activeIndicator = indicators[currentSlide]
+  carousel.activeCarousel = carousel.slides[currentSlide];
+  carousel.activeIndicator = carousel.indicators[currentSlide];
 
   currentSlide++;
 }
 
-
 window.onload = function () {
- interval = setInterval(showSlide, 3000);
+  interval = setInterval(showSlide, 3000);
 
-  indicators.forEach((el) => {
-
+  carousel.indicators.forEach((el) => {
     el.addEventListener("click", () => {
-
       currentSlide = el.id;
       showSlide(currentSlide, true);
     });
   });
 };
 
+// Side navigation bar handler
+const sidenav = {
+  nav: document.querySelector(".side-nav"),
+  navIcon: document.getElementById("nav-icon"),
+  closeNavBtn: document.querySelector(".close-nav-btn"),
+  overlay: document.getElementById("overlay"),
+  myAccountBtn: document.querySelector(".side-nav__myaccount"),
+  sideNavNav: document.querySelector(".side-nav-nav"),
+  myAccountNav: document.querySelector(".my-account-nav"),
+  closeAccountNav: document.querySelector('.close-account-nav')
+  // name: document.getElementById("name")
+};
 
-// Side navigation bar handler 
-
-const nav = document.querySelector('.side-nav');
-const navIcon = document.getElementById('nav-icon')
-const closeNavBtn = document.querySelector('.close-nav-btn');
-const overlay = document.getElementById('overlay');
+console.log(sidenav.name)
 
 const navBtnHandler = () => {
-  console.log(nav)
-  nav.classList.add('display-nav')
-  navIcon.style.display = 'none'
-  overlay.style.position = 'fixed'
-}
+  console.log(sidenav.nav);
+  sidenav.nav.classList.add("display-nav");
+  sidenav.navIcon.style.display = "none";
+  sidenav.overlay.style.position = "fixed";
+};
 
 const closeNavBtnHandler = () => {
-  nav.classList.remove('display-nav');
-  navIcon.style.display = 'block'
-  overlay.style.position  = 'static'
+  sidenav.nav.classList.remove("display-nav");
+  sidenav.navIcon.style.display = "block";
+  sidenav.overlay.style.position = "static";
+  closeAccountNavHandler()
+};
+
+const myAccountBtnHandler = () => {
+  console.log(sidenav.sideNavNav)
+  sidenav.sideNavNav.style.display = 'none';
+  sidenav.myAccountNav.classList.add('open-account-nav')
+  sidenav.nav.style.height = '24rem'
 }
 
-navIcon.addEventListener('click', navBtnHandler)
-closeNavBtn.addEventListener('click', closeNavBtnHandler)
-overlay.addEventListener('click', closeNavBtnHandler)
+const closeAccountNavHandler = () => {
+  sidenav.sideNavNav.style.display = 'block';
+  sidenav.myAccountNav.classList.remove('open-account-nav')
+  sidenav.nav.style.height = '20rem';
+}
+
+sidenav.navIcon.addEventListener("click", navBtnHandler);
+sidenav.closeNavBtn.addEventListener("click", closeNavBtnHandler);
+sidenav.overlay.addEventListener("click", closeNavBtnHandler);
+sidenav.myAccountBtn.addEventListener("click", myAccountBtnHandler);
+sidenav.closeAccountNav.addEventListener('click', closeAccountNavHandler)
