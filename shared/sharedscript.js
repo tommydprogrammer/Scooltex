@@ -100,12 +100,13 @@ const myAccountBtnHandler = () => {
 
 const closeAccountNavHandler = () => {
     console.log('here2');
+    if (sidenav.mobileNav.contains(sidenav.myAccountNav)) {
+      sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav);
+      return
+    }
     sidenav.sideNavNav.style.display = 'block';
     sidenav.myAccountNav.classList.remove('open-account-nav')
     sidenav.nav.style.height = '18rem'
-    // if (sidenav.mobileNav.contains(sidenav.myAccountNav)) {
-    //   sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav);
-    // }
 }
 
 const mobileNavHandler = () => {
