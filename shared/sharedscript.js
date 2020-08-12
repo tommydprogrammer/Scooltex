@@ -99,44 +99,40 @@ const myAccountBtnHandler = () => {
 }
 
 const closeAccountNavHandler = () => {
-  if (window.matchMedia("(min-width: 780px)").matches) {
-    console.log('here')
-     sidenav.sideNavNav.style.display = 'block';
-     sidenav.myAccountNav.classList.remove('open-account-nav')
-     sidenav.nav.style.height = '20rem';
-    // mobileNavHandler()
-  } else {
-    // navBtnHandler()
-    console.log('here2')
-    sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav)
-    sidenav.myAccountNav.classList.remove('mobile-account-nav')
-  }
+    console.log('here2');
+    // sidenav.overlay.style.position = 'static';
+    if (sidenav.mobileNav.contains(sidenav.myAccountNav)) {
+      sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav);
+    }
 }
 
 const mobileNavHandler = () => {
   sidenav.mobileNav.style.display = 'block';
-  sidenav.overlay.style.position = 'fixed'
+  sidenav.overlay.style.position = 'fixed';
 }
 
 const closeMobileNavHandler = () => {
+  console.log("th")
   sidenav.mobileNav.style.display = 'none';
-  sidenav.overlay.style.position = 'static'
+  sidenav.overlay.style.position = 'static';
 } 
 
 const closeOverlayHandler = () => {
-  closeNavBtnHandler()
   closeMobileNavHandler();
+  closeNavBtnHandler();
 }
 
 myMobileAccountBtnHandler = () => {
   sidenav.mobileNav.replaceChild(sidenav.myAccountNav, sidenav.pagesNav)
   // sidenav.pagesNav.replaceWith(sidenav.myAccountNav)
   sidenav.myAccountNav.classList.add('mobile-my-account-nav')
+  sidenav.overlay.style.position = 'fixed';
 }
 
 sidenav.navIcon.addEventListener("click", () => {
   if (window.matchMedia("(max-width: 780px)").matches) {
     mobileNavHandler()
+    console.log('here')
   } else {
     navBtnHandler()
   }

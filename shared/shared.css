@@ -603,4 +603,8 @@ footer {
   .footer-nav ul li {
     margin: 1rem 0;
   }
+
+  .topmost-bar {
+    padding: 0 1rem;
+  }
 }

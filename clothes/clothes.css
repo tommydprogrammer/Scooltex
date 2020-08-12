@@ -138,3 +138,9 @@
     background-color: var(--red-color);
     color: #ffffff;
   }
+
+  @media (max-width: 380px) {
+    .login, .register {
+      max-width: 300px;
+    }
+   }
