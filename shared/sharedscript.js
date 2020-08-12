@@ -6,11 +6,8 @@ let sticky = navbar.offsetTop;
 
 const stickyNavHandler = () => {
   if (window.pageYOffset >= sticky) {
-    // console.log('here')
     navbar.classList.add("sticky");
-    // document.querySelector('body').classList.add('content')
   } else {
-    // console.log("There")
     navbar.classList.remove("sticky");
   }
 };
@@ -66,17 +63,19 @@ window.onload = function () {
 // Side navigation bar handler
 const sidenav = {
   nav: document.querySelector(".side-nav"),
+  mobileNav: document.querySelector('.mobile-nav'),
   navIcon: document.getElementById("nav-icon"),
   closeNavBtn: document.querySelector(".close-nav-btn"),
   overlay: document.getElementById("overlay"),
   myAccountBtn: document.querySelector(".side-nav__myaccount"),
   sideNavNav: document.querySelector(".side-nav-nav"),
   myAccountNav: document.querySelector(".my-account-nav"),
+  mobileNavAccount: document.querySelector(".mobile-nav__myaccount"),
+  pagesNav: document.querySelector(".pages-nav"),
   closeAccountNav: document.querySelector('.close-account-nav')
-  // name: document.getElementById("name")
 };
 
-console.log(sidenav.name)
+// console.log(sidenav.name)
 
 const navBtnHandler = () => {
   console.log(sidenav.nav);
@@ -96,17 +95,55 @@ const myAccountBtnHandler = () => {
   console.log(sidenav.sideNavNav)
   sidenav.sideNavNav.style.display = 'none';
   sidenav.myAccountNav.classList.add('open-account-nav')
-  sidenav.nav.style.height = '24rem'
+  sidenav.nav.style.height = '26rem'
 }
 
 const closeAccountNavHandler = () => {
-  sidenav.sideNavNav.style.display = 'block';
-  sidenav.myAccountNav.classList.remove('open-account-nav')
-  sidenav.nav.style.height = '20rem';
+  if (window.matchMedia("(min-width: 780px)").matches) {
+    console.log('here')
+     sidenav.sideNavNav.style.display = 'block';
+     sidenav.myAccountNav.classList.remove('open-account-nav')
+     sidenav.nav.style.height = '20rem';
+    // mobileNavHandler()
+  } else {
+    // navBtnHandler()
+    console.log('here2')
+    sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav)
+    sidenav.myAccountNav.classList.remove('mobile-account-nav')
+  }
 }
 
-sidenav.navIcon.addEventListener("click", navBtnHandler);
+const mobileNavHandler = () => {
+  sidenav.mobileNav.style.display = 'block';
+  sidenav.overlay.style.position = 'fixed'
+}
+
+const closeMobileNavHandler = () => {
+  sidenav.mobileNav.style.display = 'none';
+  sidenav.overlay.style.position = 'static'
+} 
+
+const closeOverlayHandler = () => {
+  closeNavBtnHandler()
+  closeMobileNavHandler();
+}
+
+myMobileAccountBtnHandler = () => {
+  sidenav.mobileNav.replaceChild(sidenav.myAccountNav, sidenav.pagesNav)
+  // sidenav.pagesNav.replaceWith(sidenav.myAccountNav)
+  sidenav.myAccountNav.classList.add('mobile-my-account-nav')
+}
+
+sidenav.navIcon.addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 780px)").matches) {
+    mobileNavHandler()
+  } else {
+    navBtnHandler()
+  }
+
+});
 sidenav.closeNavBtn.addEventListener("click", closeNavBtnHandler);
-sidenav.overlay.addEventListener("click", closeNavBtnHandler);
+sidenav.overlay.addEventListener("click", closeOverlayHandler);
 sidenav.myAccountBtn.addEventListener("click", myAccountBtnHandler);
 sidenav.closeAccountNav.addEventListener('click', closeAccountNavHandler)
+sidenav.mobileNavAccount.addEventListener('click', myMobileAccountBtnHandler)

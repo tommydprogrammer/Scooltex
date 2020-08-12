@@ -10,8 +10,9 @@
   justify-content: space-between;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  column-gap: 5.3rem;
+  row-gap: 2rem;
   /* grid-template-rows: 30rem; */
   padding: 0;
   /* height: 32rem; */
@@ -68,43 +69,39 @@ font-size: 0.9rem;
 
 #user-access {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-column-gap: 2rem;
-  grid-template-rows: 14rem;
-  grid-template-areas: "login register";
+  row-gap: 3.5rem;
   color: #ffffff;
-  /* padding: 0 2.5rem; */
   margin: 5rem 0;
 }
 
 #user-access h2 {
-  text-align: left;
+  /* text-align: left; */
   font-size: 1.9rem;
   margin: 0;
-  /* color: var(--red-color); */
-  /* color: #ffffff; */
 }
 
 .register, .login {
   text-align: left;
-  /* background-color: #ffffff; */
   border-radius: 20px;
   padding: 0 0 1.8rem 1.4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 14rem;
   box-shadow: 0 2px 3px 0.2px rgba(112, 112, 112, 0.555);
 }
 
 .login {
-  grid-area: login;
+  /* grid-area: login; */
   border-top-left-radius: 0;
   background-color: rgb(17, 232, 188);
 }
 
 
 .register {
-  grid-area: register;
+  /* grid-area: register; */
   border-bottom-left-radius: 0;
   background-color: 	rgb(8, 206, 235);
   /* text-align: left; */
@@ -132,24 +129,24 @@ font-size: 0.9rem;
   justify-content: space-between;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-column-gap: 5.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
   grid-template-rows: 22rem;
   row-gap: 4rem;
   padding: 0;
-  /* height: 32rem; */
 }
 
+
 .product-item {
-  /* width: 100%; */
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
-  border-radius: 31px;
+  border-radius: 40px;
   border-top-right-radius: 0;
-  padding: 1.5rem 0 1.5rem 2.3rem
+  padding: 1.5rem 0 1.5rem 2.3rem;
+  height: 25rem;
 }
 
 .product-item img {
@@ -157,7 +154,6 @@ font-size: 0.9rem;
 }
 
 .brand-id {
-  /* width: 5.5rem; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -167,12 +163,10 @@ font-size: 0.9rem;
 
 .brand-id img {
   width: 5rem;
-  /* z-index: -100; */
 }
 
 #dell .brand-id img {
   position: relative;
-  /* left: -5px; */
   left: -10px;
 
   
@@ -219,7 +213,6 @@ h3 {
 .privacy-terms {
   width: 100%;
   height: 21px;
-  /* background-color: blue; */
   display: block;
   position: relative;
 }
@@ -227,8 +220,5 @@ h3 {
 .privacy {
   position: absolute;
   right: -118px;
-  /* text-align: right; */
-  /* left: 0; */
-  /* left: 287px; */
   top: -84px;
 }
