@@ -35,7 +35,7 @@ main {
 header {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 .topmost-bar {
@@ -49,15 +49,28 @@ header {
 }
 
 .search-bar {
-  height: 49px;
-  width: 552px;
+  height: 35px;
+  width: 100%;
   max-width: 42rem;
   border-radius: 25px;
   border-color: #dbdbdb;
   border-width: 1px;
-  padding: 1rem;
-  grid-area: search-bar;
+  padding-left: 1rem;
   justify-self: center;
+}
+
+.topmost-bar form {
+        grid-area: search-bar;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  background-color: transparent;
+  border: none;
+  width: 30px;
 }
 
 .search-bar:focus {
@@ -95,6 +108,12 @@ h1 {
 
 a {
   text-decoration: none;
+  /* display: inline-block;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 #nav-icon hr {
@@ -560,7 +579,7 @@ footer {
   }
 
   .search-bar {
-    width: 81%;
+    /* width: 81%; */
     padding: 0.5rem;
     padding-left: 1rem;
     height: 40px;
@@ -570,6 +589,11 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+
+  .topmost-bar form {
+    width: 81%;
+  }
+
 
   #nav-icon {
     position: static;
@@ -588,6 +612,10 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .topmost-bar form {
+    /* width: 81%; */
+  }
+
   #intro {
     grid-template-columns: 1fr;
 }

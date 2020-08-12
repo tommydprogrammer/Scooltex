@@ -4,10 +4,14 @@
   --red-color: rgb(255, 88, 88);
 }
 
+body {
+  background-color: #ffffff;
+}
+
 main {
   color: var(--grey-text-color);
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 }
 
 .reg-log-heading {
