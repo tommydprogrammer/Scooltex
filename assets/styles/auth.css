@@ -102,7 +102,8 @@ label[for="terms"] {
   align-items: center;
 }
 
-main button, .join-now {
+main button,
+.join-now {
   border: none;
   margin: 0;
   font-size: 1.3rem;
@@ -114,7 +115,6 @@ main button a {
   font: inherit;
   font-size: 1.3rem;
   font-weight: 700;
-
 }
 
 .join-now:focus,
@@ -129,8 +129,13 @@ main button {
   height: 3.5rem;
   /* margin-top: 1.4rem; */
 }
+
 /* Login page */
-.login-page, .reset-email, .join-now, .account-setting { 
+.login-page,
+.reset-email,
+.join-now,
+.account-setting,
+.verification-page input[type="submit"] {
   background-color: var(--red-color);
   color: #ffffff;
   margin: 3rem 0 1.4rem 0;
@@ -141,4 +146,97 @@ main button {
 
 input.account-setting {
   margin-top: 4rem !important;
+}
+
+/* Verification page */
+
+.verification-page__info-heading {
+  font-size: 1.2rem;
+  width: 122%;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+.verification-page__info-heading span {
+  border-bottom: 2px solid red;
+}
+
+.select-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  width: 100%;
+  grid-template-rows: 3.5rem;
+  margin-top: 1.4rem;
+}
+
+#year-of-study,
+#course-leight {
+  width: 100%;
+  height: 100%;
+  padding: 0 11px 0 11px;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+input[type="file"] {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+label[for="upload"] {
+  width: 100%;
+  height: 8.4rem;
+  padding: 0 11px 11px 11px;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.4rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+label[for="upload"] div p {
+  margin: 0 0 5px 0;
+}
+
+.verification-page hr {
+  border: 1px solid var(--grey-text-color);
+  width: 100%;
+  margin: 3rem 0 2rem 0;
+}
+
+.file-name {
+  display: none;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -47px;
+  left: 0;
+  text-align: left;
+}
+
+.show-file-name {
+  display: block;
+}
+
+.verification-page form h2 {
+  font: inherit;
+  color: black;
+  margin: 3rem 0 0 0;
+  width: 100%;
+  text-align: left;
 }

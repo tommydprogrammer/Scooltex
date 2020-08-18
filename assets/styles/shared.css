@@ -54,6 +54,7 @@ header {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 3px 2px var(--shadow-color);
   padding-top: 1.2rem;
+  position: relative;
 }
 
 .topmost-bar {
@@ -171,6 +172,18 @@ a {
   align-items: center;
   height: 100%;
   font-weight: 600;
+}
+
+#progress {
+  background-color: var(--red-color);
+  margin: 20px 0 0 0;
+  height: 4px;
+  position: absolute;
+  bottom: -1px;
+}
+
+#progress.done {
+  display: none;
 }
 
 /*******************************/ 

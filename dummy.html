@@ -7,12 +7,12 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $({property: 0}).animate({property: 100}, {
+      $({property: 0}).animate({property: 105}, {
         duration: 4000,
         step: function() {
           var _percent = Math.round(this.property);
           $("#progress").css("width",  _percent+"%");
-          if(_percent == 100) {
+          if(_percent == 105) {
             $("#progress").addClass("done");
           }
         },
@@ -23,10 +23,17 @@
     });
   </script>
 
-  <link href="css/progressbar.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="css/progressbar.css" rel="stylesheet" type="text/css" /> -->
+  <style>
+    #progress {
+      background-color: red;
+      margin: 20px 0 0 0;
+      height: 2rem;
+    }
+  </style>
 
   </head>
   <body>
-    <div id="progress" style="height: 50px; color: red;" class="waiting">
+    <div style="color: red;" id="progress" class="waiting">
   </body>
 </html>

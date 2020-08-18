@@ -9,12 +9,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/styles/shared.css">
     <link rel="stylesheet" href="../assets/styles/auth.css">
-    <!-- Progress bar plugin  -->
-  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <!-- Scripts -->
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="../assets/script/sharedscript.js" defer></script>
-    <script src="../assets/script/register.js" defer></script>
-    <title>Scooltec - Register</title>
+    <!-- <script src="../assets/script/register.js" defer></script> -->
+    <script src="../assets/script/auth.js" defer    ></script>
+    <title>Student - Verification</title>
 </head>
 
 <body>
@@ -85,25 +85,95 @@
                 <li><a href="../pages/beauty/index.html">Beauty</a></li>
             </ul>
         </nav>
-        <div id="progress" class="waiting">
 
+        <div id="progress" class="waiting">
     </header>
 
-    <main class="signup__page">
-        <h1 class="heading">Join Scooltec now</h1>
-
+    <main class="verification-page">
+        <h1 class="heading">Study verification</h1>
+        
         <form action="">
-            <input type="email" name="user-email" id="user-email" placeholder="Email">
-            <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email">
-            <input type="password" name="user-password" id="user-password" placeholder="Password">
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
-            <label class="checkbox" for="terms"><input type="checkbox" name="terms" id="terms"><span>I accept and read <a href="#">Term & Condition and Private policy</a> and I <br>
-                 confirm that  I'm 16 year of age or older.</span></label>
-            <input class="join-now" type="submit" value="Join now">
-            <button class="login">
-                <a href="login.html">Login</a>
-            </button>
+            <p class="verification-page__info-heading">1.<span>Fill up this form if you are a high school student</span></p>
+
+            <input type="text" name="high-school-name" id="high-school-name" placeholder="High school of study">
+            <div class="select-elements">
+                <select name="year-of-study" id="year-of-study">
+                    <option value="" disabled selected hidden>Year of study</option>
+                    <option value="year-1">Year 1</option>
+                    <option value="year-2">Year 2</option>
+                    <option value="year-3">Year 3</option>
+                    <option value="year-4">Year 4</option>
+                    <option value="year-5">Year 5</option>
+                    <option value="year-6">Year 6</option>
+                    <option value="year-7">Year 7</option>
+                    <option value="year-8">Year 8</option>
+                </select>
+                <select name="course-leight" id="course-leight">
+                    <option value="" disabled selected hidden>Course leight</option>
+                    <option value="year-1">Year 1</option>
+                    <option value="year-2">Year 2</option>
+                    <option value="year-3">Year 3</option>
+                    <option value="year-4">Year 4</option>
+                    <option value="year-5">Year 5</option>
+                    <option value="year-6">Year 6</option>
+                    <option value="year-7">Year 7</option>
+                    <option value="year-8">Year 8</option>
+                </select>
+            </div>
+            <label for="upload">
+                <div>
+                    <p>Attach student ID photo</p>
+                    <img src="../assets/images/icons/upload icon.jpg" alt="">
+                </div>
+                <input class="upload" type="file" name="student-id" id="student-id" placeholder="Attach student ID Photo">
+                <p class="file-name"></p>
+            </label>
+            
+            <hr>
+
+            <p class="verification-page__info-heading">2.<span>Fill up this form if you are a university student</span></p>
+
+            <input type="text" name="university-name" id="university-name" placeholder="University of study">
+            <div class="select-elements">
+                <select name="year-of-study" id="year-of-study">
+                    <option value="" disabled selected hidden>Year of study</option>
+                    <option value="year-1">Year 1</option>
+                    <option value="year-2">Year 2</option>
+                    <option value="year-3">Year 3</option>
+                    <option value="year-4">Year 4</option>
+                    <option value="year-5">Year 5</option>
+                    <option value="year-6">Year 6</option>
+                    <option value="year-7">Year 7</option>
+                    <option value="year-8">Year 8</option>
+                </select>
+                <select name="course-leight" id="course-leight">
+                    <option value="" disabled selected hidden>Course leight</option>
+                    <option value="year-1">Year 1</option>
+                    <option value="year-2">Year 2</option>
+                    <option value="year-3">Year 3</option>
+                    <option value="year-4">Year 4</option>
+                    <option value="year-5">Year 5</option>
+                    <option value="year-6">Year 6</option>
+                    <option value="year-7">Year 7</option>
+                    <option value="year-8">Year 8</option>
+                </select>
+            </div>
+
+            <label for="upload">
+                <div>
+                    <p>Attach student ID photo</p>
+                    <img src="../assets/images/icons/upload icon.jpg" alt="">
+                </div>
+                <input class="upload" type="file" name="student-id" id="student-id" placeholder="Attach student ID Photo">
+                <p class="file-name"></p>
+            </label>
+
+            <h2>* The photo ID must show your picture and <br>
+                the institution of study.</h2>
+
+            <input type="submit" value="Next" placeholder="Next">
         </form>
+
 
     </main>
 
