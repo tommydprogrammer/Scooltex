@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../assets/styles/auth.css">
     <!-- Scripts -->
     <script src="../assets/script/sharedscript.js" defer></script>
-    <!-- <script src="../assets/script/register.js" defer></script> -->
-    <title>Scooltec - Login</title>
+    <script src="../assets/script/register.js" defer></script>
+    <title>Scooltec - Register</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <nav class="side-nav">
         <span>
             <button class="close-nav-btn">
-                <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/></svg>            
+                <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/></svg>
             </button>
             <a class="side-nav__register" href="./signup.html">Register</a>
             <a class="side-nav__login" href="./login.html">Login</a>
@@ -35,7 +35,7 @@
                 <li><a class="close-account-nav" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg > back</a></li>
                 <li><a href="#">Scooltec ID</a></li>
                 <li><a href="#">Notification</a></li>
-                <li><a href="./accountsettings.html">Account details</a></li>
+                <li><a href="#">Account details</a></li>
                 <li><a href="#">PRO</a></li>
                 <li><a href="#">Log Out</a></li>
             </ul>
@@ -85,19 +85,19 @@
         </nav>
     </header>
 
-    <main class="login__page">
-        <h1 class="heading">Login to Scooltec</h1>
+    <main class="signup__page">
+        <h1 class="heading">Join Scooltec now</h1>
 
         <form action="">
-            <input type="email" name="user-email" id="user-email" placeholder="Email address">
+            <input type="email" name="user-email" id="user-email" placeholder="Email">
+            <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email">
             <input type="password" name="user-password" id="user-password" placeholder="Password">
-            <!-- <input class="login login-page" type="button" value="Login">    -->
-            <input class="login login-page" type="submit" value="Login">
-            <button>
-                <a href="./signup.html">Sign Up</a>
-            </button>
-            <button>
-                <a href="./accountreset.html">Forgotten your password?</a>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+            <label class="checkbox" for="terms"><input type="checkbox" name="terms" id="terms"><span>I accept and read <a href="#">Term & Condition and Private policy</a> and I <br>
+                 confirm that  I'm 16 year of age or older.</span></label>
+            <input class="join-now" type="submit" value="Join now">
+            <button class="login">
+                <a href="login.html">Login</a>
             </button>
         </form>
 
