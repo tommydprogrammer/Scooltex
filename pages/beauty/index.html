@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../assets/styles/shared.css">
     <link rel="stylesheet" href="../../assets/styles/beauty.css">
     <!-- Progress bar plugin  -->
-  <script src="https://code.jquery.com/jquery-2.0.3.min.js" defer></script>
+  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <!-- Scripts -->
     <script src="../../assets/script/sharedscript.js" defer></script>
     <title>Scooltec - Beauty</title>
@@ -82,9 +82,22 @@
                 <li><a href="../hypermarket/index.html">Hypermarket</a></li>
                 <li><a href="./index.html">Beauty</a></li>
             </ul>
+            <div id="progress" class="waiting"></div>
         </nav>
-        <div id="progress" class="waiting">
-
+            <script type="text/javascript">
+                $(document).ready(function(){
+                $({property: 0}).animate({property: 105}, {
+                    duration: 2500,
+                    step: function() {
+                    var _percent = Math.round(this.property);
+                    $("#progress").css("width",  _percent+"%");
+                    if(_percent == 105) {
+                        $("#progress").addClass("done");
+                    }
+                    },
+                });
+                });
+            </script>
     </header>
     
     <main>

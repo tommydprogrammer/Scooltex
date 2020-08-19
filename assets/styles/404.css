@@ -1,0 +1,46 @@
+body {
+    background-color: #ffffff;
+}
+
+main#error-page {
+    /* text-align: center; */
+    background: no-repeat url(../images/illustration.jpg), right no-repeat url(../images/illustration2.jpg);
+    background-position: left 0 bottom 5rem, right 0 top 5rem;
+    background-size: 96px;
+    /* background-color: #ffffff; */
+    height: 45rem;
+    padding: 10rem 0;
+}
+
+#error-page a {
+        width: 21rem;
+        height: 4rem;
+        border-radius: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+h1.error-message {
+    font-size: 6rem;
+    margin: 0;
+}
+
+p.error {
+    color: var(--red-color);
+    font-size: 2rem;
+    margin: 0;
+}
+
+main a {
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: var(--red-color);
+    width: 21rem;
+    display: block;
+    margin-top: 0.7rem;
+}

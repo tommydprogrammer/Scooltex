@@ -1,87 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="./shared/shared.css">
-    <link rel="stylesheet" href="./assets/styles/404.css">
-    <!-- Scripts -->
-    <script src="./shared/sharedscript.js" defer></script>
-    <title>Error loading page</title>
-</head>
-
-<body>
-    <div id="overlay"></div>
-    <nav class="side-nav">
-        <span>
-            <a class="side-nav__register" href="./register and login/register.html">Register</a>
-            <a class="side-nav__login" href="./register and login/login.html">Login</a>
-            <div class="side-nav-nav">
-                <a class="side-nav__myaccount" href="#">My account <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a>
-                <a href="#">Support</a>
-            </div>
-            
-               <ul class="my-account-nav">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/styles/shared.css">
+        <link rel="stylesheet" href="./assets/styles/404.css">
+        <!-- Progress bar plugin  -->
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!-- Scripts -->
+        <script src="./assets/script/sharedscript.js" defer></script>
+        <title>Scooltec</title>
+    </head>
+    
+    <body>
+        <div id="overlay"></div>
+        <nav class="side-nav">
+            <span>
+                <button class="close-nav-btn">
+                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/><g/><g/><g/><g/><g/><g/></svg>            
+                </button>
+                <a class="side-nav__register" href="./auth/signup.html">Register</a>
+                <a class="side-nav__login" href="./auth/login.html">Login</a>
+                <div class="side-nav-nav">
+                    <a class="side-nav__myaccount" href="#">My account 
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                            <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a>
+                    <a href="#">Support</a>
+                </div>
+                
+                <ul class="my-account-nav">
                     <li><a class="close-account-nav" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg > back</a></li>
                     <li><a href="#">Scooltec ID</a></li>
                     <li><a href="#">Notification</a></li>
                     <li><a href="#">Account details</a></li>
-                    <li><a href="#">PRO<svg class="green-check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></a></li>
+                    <li><a href="#">PRO</a></li>
                     <li><a href="#">Log Out</a></li>
                 </ul>
-        </span>
-        <button class="close-nav-btn">
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
-        </button>
-    </nav>
-    <nav class="mobile-nav">
-        <div>
-            <a class="mobile-nav__register" href="./register and login/register.html">Register</a>
-            <a class="mobile-nav__login" href="./register and login/login.html">Login</a>
-        </div>
-        <ul class="pages-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./resturant/resturant.html">Resturant</a></li>
-            <li><a href="./clothes/clothes.html">Clothes</a></li>
-            <li><a href="./technology/technology.html">Technology</a></li>
-            <li><a href="./lifestyle/lifestyle.html">Lifestyle</a></li>
-            <li><a href="#">Hypermarket</a></li>
-            <li><a href="./beauty/beauty.html">Beauty</a></li>
-            <li><a class="mobile-nav__myaccount" href="#">My account <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
+            </span>
+            
         </nav>
-    <header>
-        <div class="topmost-bar">
-            <form action="#">
-                <input class="search-bar" type="text" placeholder="Search...">
-                <button class="search-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button>
-            </form>
-            <button id="nav-icon">
-                <hr>
-                <hr>
-                <hr>
-            </button>
-        </div>
-       <a href="./index.html"><h1>Scooltec</h1></a>
-        <nav id="nav-list">
-            <ul class="main-nav-list">
+        <nav class="mobile-nav">
+            <div>
+                <a class="mobile-nav__register" href="./auth/signup.html">Register</a>
+                <a class="mobile-nav__login" href="./auth/login.html">Login</a>
+            </div>
+            <ul class="pages-nav">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./resturant/resturant.html">Restaurant</a></li>
-                <li><a href="./clothes/clothes.html">Clothes</a></li>
-                <li><a href="./technology/technology.html">Technology</a></li>
-                <li><a href="./lifestyle/lifestyle.html">Lifestyle</a></li>
-                <li><a href="#">Hypermarket</a></li>
-                <li><a href="./beauty/beauty.html">Beauty</a></li>
+                <li><a href="./pages/restaurant/index.html">Resturant</a></li>
+                <li><a href="./pages/clothes/index.html">Clothes</a></li>
+                <li><a href="./pages/technology/index.html">Technology</a></li>
+                <li><a href="./pages/lifestyle/index.html">Lifestyle</a></li>
+                <li><a href="./pages/hypermarket/index.html">Hypermarket</a></li>
+                <li><a href="./pages/beauty/index.html">Beauty</a></li>
+                <li><a class="mobile-nav__myaccount" href="#">My account <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a></li>
+                <li><a href="#">Support</a></li>
             </ul>
-        </nav>
-    </header>
+            </nav>
+        <header>
+            <div class="topmost-bar">
+                <form action="#">
+                    <input class="search-bar" type="text" placeholder="Search...">
+                    <button class="search-icon"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></button>
+                </form>
+                <button id="nav-icon">
+                    <hr>
+                    <hr>
+                    <hr>
+                </button>
+            </div>
+           <a href="./index.html"><h1>Scooltec</h1></a>
+            <nav id="nav-list">
+                <ul class="main-nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/restaurant/index.html">Restaurant</a></li>
+                    <li><a href="./pages/clothes/index.html">Clothes</a></li>
+                    <li><a href="./pages/technology/index.html">Technology</a></li>
+                    <li><a href="./pages/lifestyle/index.html">Lifestyle</a></li>
+                    <li><a href="./pages/hypermarket/index.html">Hypermarket</a></li>
+                    <li><a href="./pages/beauty/index.html">Beauty</a></li>
+                </ul>
+                <div id="progress" class="waiting"></div>
+            </nav>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                    $({property: 0}).animate({property: 105}, {
+                        duration: 2500,
+                        step: function() {
+                        var _percent = Math.round(this.property);
+                        $("#progress").css("width",  _percent+"%");
+                        if(_percent == 105) {
+                            $("#progress").addClass("done");
+                        }
+                        },
+                    });
+                    });
+                </script>
+        </header>
 
-    <main>
+    <main id="error-page">
         <h1 class="error-message">WHOOPS!</h1>
         <p class="error">You lost your way</p>
         <img src="./assets/images/car.jpg" alt="">
