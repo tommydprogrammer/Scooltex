@@ -1,0 +1,149 @@
+[33mcommit db3051375fafac66cde4948d044c1e2184cc5e83[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 19 09:59:27 2020 +0100
+
+    make adjustment
+
+[33mcommit 05d9eee1807f12949bb896f9b36ffe195787e517[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 19 00:55:26 2020 +0100
+
+    fix error
+
+[33mcommit c6144451d6cf28c7a8733a1e6d352da7953b3bd7[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 19 00:54:10 2020 +0100
+
+    fix errors
+
+[33mcommit 02dbeb61322c3f023f585f04b6f5902c302b427b[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 19 00:51:57 2020 +0100
+
+    fix defer error
+
+[33mcommit a7cf1f1636e9cbccea3600ac9d311245db7095dc[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 19 00:45:37 2020 +0100
+
+    add forms and prorress bar
+
+[33mcommit 9752f70b0a9031afa5d300e2d6490893b054c4ad[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 18 06:47:43 2020 +0100
+
+    add forms
+
+[33mcommit 9985906a5495a504ef714635cf80179387d6211a[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Sat Aug 15 16:11:50 2020 +0100
+
+    restructure and redesign
+
+[33mcommit 717e76386d1602bdb5e823e86f093ac3065d94d4[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 12 23:20:57 2020 +0100
+
+    fix error in nav
+
+[33mcommit 501f16201543352ea611ec0566c7356658e8e038[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 12 22:42:00 2020 +0100
+
+    adjust nav
+
+[33mcommit 0dd844a6524b2bf446bee793c468ba990bcff6fc[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 12 22:36:56 2020 +0100
+
+    fix nav issue
+
+[33mcommit a8c8a4926298fa2d6ef12c21c55ed013fe56adf2[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 12 10:07:47 2020 +0100
+
+    fix layouts
+
+[33mcommit b5cafb00d22a1588c6ee5eeef28cc9e70b3bcf8e[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 12 09:12:39 2020 +0100
+
+    add clothes, technology, lifestyle & beauty
+
+[33mcommit f9cf578e39ab39f8a1486cad003da01ea8111c6e[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 11 11:49:42 2020 +0100
+
+    complete register & login page
+
+[33mcommit 09deb080f8f1c638dd5dc6bb475980bf462f5b0a[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Mon Aug 10 09:45:55 2020 +0100
+
+    add register page
+
+[33mcommit a52f2b00356948293404f14f177db5eeb915057b[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Mon Aug 10 07:56:20 2020 +0100
+
+    edit homepage design
+
+[33mcommit 2b3be7df84dbbdde0128978f2363763141ec9c6a[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Thu Aug 6 09:32:10 2020 +0100
+
+    fix layout
+
+[33mcommit e81a27ec68d91543f83ca815949aa1fafd538b1d[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Thu Aug 6 09:16:19 2020 +0100
+
+    add resturant page
+
+[33mcommit 8065326559ac623c42bbf6d499af9dff23f323b0[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Thu Aug 6 07:47:40 2020 +0100
+
+    add side nav to home page
+
+[33mcommit c202a9d6e1453e53480450a5f187ae777e3e00a1[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 5 18:50:48 2020 +0100
+
+    add icons to footer
+
+[33mcommit 8b6089d47be9cb7569c4b587575d2cb0067e0e4b[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 5 18:09:46 2020 +0100
+
+    adjust html layout
+
+[33mcommit bd35f93ebe1735312e7fe8f1053771d2bc0e20e9[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Wed Aug 5 14:35:15 2020 +0100
+
+    complete home page layout
+
+[33mcommit a2f214e2f88d55a09c87d5da5aabf9e34b112e99[m[33m ([m[1;33mtag: v1.0[m[33m)[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 4 18:06:52 2020 +0100
+
+    fix issues
+
+[33mcommit 2a502b5fa5935915368e8c9d837d1da78c09a225[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 4 17:55:48 2020 +0100
+
+    make nav sticky
+
+[33mcommit 6859decc48b07a6b43e57c06b0f6a270e012ec60[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 4 17:10:48 2020 +0100
+
+    complete part of the layout design
+
+[33mcommit af22d1cfab7480edcd68f43d20efcbe969977eae[m
+Author: Ahmad Usman <usmanah9817@gmail.com>
+Date:   Tue Aug 4 11:31:04 2020 +0100
+
+    initial commit

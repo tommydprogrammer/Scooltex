@@ -150,7 +150,7 @@ a {
 #nav-list {
   border-top: 0.2px solid #dbdbdb;
   color: var(--grey-text-color);
-  z-index: 300;
+  z-index: 500;
   box-shadow: 0 3px 2px var(--shadow-color);
   /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16); */
 
@@ -275,31 +275,19 @@ a.side-nav__login {
 
 a.side-nav__myaccount svg {
   height: 70%;
-  /* position: relative;
-  right: -6rem; */
 }
 
-
 button.close-nav-btn {
-  /* width: 6rem; */
-  /* height: 4rem; */
   background-color: #ffffff;
   border: none;
   position: relative;
   right: -10.9rem;
   top: 0;
-  /* border: 0.2px solid #dbdbdb; */
   color: var(--grey-text-color);
   transition: 0.5s;
 }
 
-/* button.close-nav-btn:hover {
-  background-color: var(--red-color);
-  color: #ffffff;
-} */
-
 button.close-nav-btn svg {
-  /* height: 50%; */
   width: 1.5rem;
 }
 
@@ -359,7 +347,6 @@ button.close-nav-btn svg {
   z-index: 1000;
 }
 
-
 .mobile-nav svg{
   width: 12px;
 }
@@ -378,7 +365,6 @@ button.close-nav-btn svg {
   display: flex;
   justify-content: center;
 }
-
 
 .mobile-nav__login {
   background-color: transparent;
@@ -425,6 +411,99 @@ a.mobile-nav__register {
 .mobile-nav .mobile-my-account-nav li {
   margin: 0.5rem 0;
 }
+
+/*******************************/ 
+/************order*************/
+/*******************************/
+#order {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 2px 2px var(--shadow-color);
+  width: 28rem;
+  padding: 1.5rem;
+  color: var(--grey-text-color);
+  position: absolute;
+  z-index: 400;
+  transform: translatex(120px) translateY(65px);
+}
+
+.logo {
+  width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo div.brand-logo {
+  margin-right: 0.8rem;
+  background: no-repeat center/cover url(../images/tv-logo.jpg);
+  height: 4rem;
+  width: 4rem;
+}
+
+.offer p {
+  text-align: left;
+}
+
+.order-text__black {
+  color: black;
+  font-weight: 800;
+}
+
+.limited-offer, 
+.pro, 
+.discount-code {
+  color: var(--red-color);
+}
+
+.discount-code {
+  font-weight: 800;
+}
+
+div.block {
+  height: 2rem;
+  width: 10rem;
+  background-color: var(--red-color);
+}
+
+div p a {
+  color: var(--red-color);
+  text-decoration: underline;
+}
+
+.block-access,
+.allow-access {
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-access {
+  display: flex;
+}
+
+.allow-access {
+  display: none ;
+}
+
+.block-access hr {
+  width: 100%;
+  border: solid 0.5px var(--red-color);
+  height: 2px;
+}
+
+.block-access p,
+.allow-access p {
+  margin: 7px 0;
+}
+
+div#order .cta {
+  padding: 0.5rem 1.2rem;
+  color: white;
+  background-color: var(--red-color);
+  border-radius: 16px;
+  margin:  10px 0;
+}
+
+
+
 
 /*******************************/ 
 /************Intro*************/

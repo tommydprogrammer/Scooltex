@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Progress Test</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/shared.css">
+  <title>Order</title>
+</head>
+<body>
+  <div id="order">
+    <div class="logo">
+      <img src="./assets/images/tv-logo.jpg" alt="Logo">
+      <p>Now TV</p>
+    </div>
+    <div class="offer">
+      <p class="order-text__black">15% OFF</p>
+      <p class="limited-offer">Limited offer</p>
+    </div>
+    <div class="block-access">
+      <div class="block"></div>
+      <p>You need to <a href="./auth/login.html">login</a> to redeem this code.</p>
+      <hr>
+      <p class="order-text__black">Don't have account</p>
+      <p>You need to become <span class="pro">PRO</span> to redeem this code.</p>
+      <a class="cta" href="./auth/signup.html">Join Scooltec now</a>
+    </div>
+    <div class="allow-access">
+      <p class="discount-code">SC-5876-5874-L</p>
+      <p>Copy the code and paste at check out</p>
+      <a class="cta" href="#">Go to website</a>
+    </div>
+  </div>
 
-  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $({property: 0}).animate({property: 105}, {
-        duration: 4000,
-        step: function() {
-          var _percent = Math.round(this.property);
-          $("#progress").css("width",  _percent+"%");
-          if(_percent == 105) {
-            $("#progress").addClass("done");
-          }
-        },
-        complete: function() {
-          alert("complete");
-        }
-      });
-    });
-  </script>
-
-  <!-- <link href="css/progressbar.css" rel="stylesheet" type="text/css" /> -->
-  <style>
-    #progress {
-      background-color: red;
-      margin: 20px 0 0 0;
-      height: 2rem;
-    }
-  </style>
-
-  </head>
-  <body>
-    <div style="color: red;" id="progress" class="waiting">
-  </body>
+</body>
 </html>

@@ -1,17 +1,22 @@
-// progress Bar 
-$(document).ready(function(){
-  $({property: 0}).animate({property: 105}, {
-    duration: 2500,
-    step: function() {
-      var _percent = Math.round(this.property);
-      $("#progress").css("width",  _percent+"%");
-      if(_percent == 105) {
-        $("#progress").addClass("done");
-      }
-    },
-  });
-});
+const DOMElements = {
+  nav: document.querySelector(".side-nav"),
+  mobileNav: document.querySelector('.mobile-nav'),
+  navIcon: document.getElementById("nav-icon"),
+  closeNavBtn: document.querySelector(".close-nav-btn"),
+  overlay: document.getElementById("overlay"),
+  myAccountBtn: document.querySelector(".side-nav__myaccount"),
+  sideNavNav: document.querySelector(".side-nav-nav"),
+  myAccountNav: document.querySelector(".my-account-nav"),
+  mobileNavAccount: document.querySelector(".mobile-nav__myaccount"),
+  pagesNav: document.querySelector(".pages-nav"),
+  closeAccountNav: document.querySelector('.close-account-nav'),
+  indicators: document.querySelectorAll(".indicator"),
+  slides: document.querySelectorAll(".carousel-item"),
+  activeCarousel: document.querySelector(".carousel-item.active"),
+  activeIndicator: document.querySelector(".indicator.active"),
+  orderBtn: document.querySelectorAll(".order-btn")
 
+};
 
 // Make navbar sticky
 
@@ -31,123 +36,92 @@ window.onscroll = function () {
   stickyNavHandler();
 };
 
-//Carousel Logic
-const carousel = {
-  indicators: document.querySelectorAll(".indicator"),
-  slides: document.querySelectorAll(".carousel-item"),
-  activeCarousel: document.querySelector(".carousel-item.active"),
-  activeIndicator: document.querySelector(".indicator.active"),
-};
-console.log(carousel.activeCarousel);
+console.log(DOMElements.activeCarousel);
 
 var currentSlide = 1;
 let interval;
 
+
 function showSlide(slideIndex, clicked) {
   console.log(currentSlide);
-  if (currentSlide >= carousel.slides.length) {
+  if (currentSlide >= DOMElements.slides.length) {
     currentSlide = 0;
     console.log("reset");
   }
   if (clicked) {
     clearInterval(interval);
   }
-  carousel.activeCarousel.classList.remove("active");
-  carousel.activeIndicator.classList.remove("active");
+  DOMElements.activeCarousel.classList.remove("active");
+  DOMElements.activeIndicator.classList.remove("active");
 
-  carousel.slides[currentSlide].classList.add("active");
-  carousel.indicators[currentSlide].classList.add("active");
+  DOMElements.slides[currentSlide].classList.add("active");
+  DOMElements.indicators[currentSlide].classList.add("active");
 
-  carousel.activeCarousel = carousel.slides[currentSlide];
-  carousel.activeIndicator = carousel.indicators[currentSlide];
+  DOMElements.activeCarousel = DOMElements.slides[currentSlide];
+  DOMElements.activeIndicator = DOMElements.indicators[currentSlide];
 
   currentSlide++;
 }
 
-window.onload = function () {
-  interval = setInterval(showSlide, 3000);
-
-  carousel.indicators.forEach((el) => {
-    el.addEventListener("click", () => {
-      currentSlide = el.id;
-      showSlide(currentSlide, true);
-    });
-  });
-};
-
-// Side navigation bar handler
-const sidenav = {
-  nav: document.querySelector(".side-nav"),
-  mobileNav: document.querySelector('.mobile-nav'),
-  navIcon: document.getElementById("nav-icon"),
-  closeNavBtn: document.querySelector(".close-nav-btn"),
-  overlay: document.getElementById("overlay"),
-  myAccountBtn: document.querySelector(".side-nav__myaccount"),
-  sideNavNav: document.querySelector(".side-nav-nav"),
-  myAccountNav: document.querySelector(".my-account-nav"),
-  mobileNavAccount: document.querySelector(".mobile-nav__myaccount"),
-  pagesNav: document.querySelector(".pages-nav"),
-  closeAccountNav: document.querySelector('.close-account-nav')
-};
-
-// console.log(sidenav.name)
-
 const navBtnHandler = () => {
-  console.log(sidenav.nav);
-  sidenav.nav.classList.add("display-nav");
-  sidenav.navIcon.style.display = "none";
-  sidenav.overlay.style.position = "fixed";
+  console.log(DOMElements.nav);
+  DOMElements.nav.classList.add("display-nav");
+  DOMElements.navIcon.style.display = "none";
+  DOMElements.overlay.style.position = "fixed";
 };
 
 const closeNavBtnHandler = () => {
-  sidenav.nav.classList.remove("display-nav");
-  sidenav.navIcon.style.display = "flex";
-  sidenav.overlay.style.position = "static";
+  DOMElements.nav.classList.remove("display-nav");
+  DOMElements.navIcon.style.display = "flex";
+  DOMElements.overlay.style.position = "static";
   closeAccountNavHandler()
 };
 
 const myAccountBtnHandler = () => {
-  console.log(sidenav.sideNavNav)
-  sidenav.sideNavNav.style.display = 'none';
-  sidenav.myAccountNav.classList.add('open-account-nav')
-  sidenav.nav.style.height = '28rem'
+  console.log(DOMElements.sideNavNav)
+  DOMElements.sideNavNav.style.display = 'none';
+  DOMElements.myAccountNav.classList.add('open-account-nav')
+  DOMElements.nav.style.height = '28rem'
 }
 
 const closeAccountNavHandler = () => {
     console.log('here2');
-    if (sidenav.mobileNav.contains(sidenav.myAccountNav)) {
-      sidenav.mobileNav.replaceChild(sidenav.pagesNav, sidenav.myAccountNav);
+    if (DOMElements.mobileNav.contains(DOMElements.myAccountNav)) {
+      DOMElements.mobileNav.replaceChild(DOMElements.pagesNav, DOMElements.myAccountNav);
       return
     }
-    sidenav.sideNavNav.style.display = 'block';
-    sidenav.myAccountNav.classList.remove('open-account-nav')
-    sidenav.nav.style.height = '21rem'
+    DOMElements.sideNavNav.style.display = 'block';
+    DOMElements.myAccountNav.classList.remove('open-account-nav')
+    DOMElements.nav.style.height = '21rem'
 }
 
 const mobileNavHandler = () => {
-  sidenav.mobileNav.style.display = 'block';
-  sidenav.overlay.style.position = 'fixed';
+  DOMElements.mobileNav.style.display = 'block';
+  DOMElements.overlay.style.position = 'fixed';
 }
 
 const closeMobileNavHandler = () => {
-  console.log("th")
-  sidenav.mobileNav.style.display = 'none';
-  sidenav.overlay.style.position = 'static';
+  // conssole.log("th")
+  DOMElements.mobileNav.style.display = 'none';
+  DOMElements.overlay.style.position = 'static';
 } 
 
 const closeOverlayHandler = () => {
   closeMobileNavHandler();
   closeNavBtnHandler();
+  
+  if (document.body.contains(document.querySelector('#order'))) {
+    closeOrderPopup();
+  }
 }
 
 myMobileAccountBtnHandler = () => {
-  sidenav.mobileNav.replaceChild(sidenav.myAccountNav, sidenav.pagesNav)
-  // sidenav.pagesNav.replaceWith(sidenav.myAccountNav)
-  sidenav.myAccountNav.classList.add('mobile-my-account-nav')
-  sidenav.overlay.style.position = 'fixed';
+  DOMElements.mobileNav.replaceChild(DOMElements.myAccountNav, DOMElements.pagesNav)
+  DOMElements.myAccountNav.classList.add('mobile-my-account-nav')
+  DOMElements.overlay.style.position = 'fixed';
 }
 
-sidenav.navIcon.addEventListener("click", () => {
+DOMElements.navIcon.addEventListener("click", () => {
   if (window.matchMedia("(max-width: 780px)").matches) {
     mobileNavHandler()
     console.log('here')
@@ -156,8 +130,74 @@ sidenav.navIcon.addEventListener("click", () => {
   }
 
 });
-sidenav.closeNavBtn.addEventListener("click", closeNavBtnHandler);
-sidenav.overlay.addEventListener("click", closeOverlayHandler);
-sidenav.myAccountBtn.addEventListener("click", myAccountBtnHandler);
-sidenav.closeAccountNav.addEventListener('click', closeAccountNavHandler)
-sidenav.mobileNavAccount.addEventListener('click', myMobileAccountBtnHandler)
+
+// Order button handler
+const orderBtnHandler = (btn) => {
+  console.log(btn)
+  console.log('clicked')
+  
+  const src = {
+    signup: DOMElements.nav.querySelector('.side-nav__register').getAttribute('href'),
+    login: DOMElements.nav.querySelector('.side-nav__login').getAttribute('href')
+  }
+
+  console.log(src.signup, src.login)
+  const orderElement = `
+    <div id="order">
+      <div class="logo">
+          <div class="brand-logo"></div>
+          <p>Now TV</p>
+      </div>
+      <div class="offer">
+          <p class="order-text__black">15% OFF</p>
+          <p class="limited-offer">Limited offer</p>
+      </div>
+      <div class="block-access">
+          <div class="block"></div>
+          <p>You need to <a href=${src.login}>login</a> to redeem this code.</p>
+          <hr>
+          <p class="order-text__black">Don't have account</p>
+          <p>You need to become <span class="pro">PRO</span> to redeem this code.</p>
+          <a class="cta" href=${src.signup}>Join Scooltec now</a>
+      </div>
+      <div class="allow-access">
+          <p class="discount-code">SC-5876-5874-L</p>
+          <p>Copy the code and paste at check out</p>
+          <a class="cta" href="#">Go to website</a>
+      </div>
+    </div>
+  `
+  DOMElements.overlay.style.position = 'fixed';
+  console.log(btn.closest('section'))
+  
+
+  btn.closest('section').insertAdjacentHTML('afterbegin', orderElement)
+  const order = document.querySelector('a.cta');
+  order.addEventListener('click', () => {
+    closeOrderPopup()
+  })
+}
+
+const closeOrderPopup = () => {
+  document.querySelector('#order').remove();
+  DOMElements.overlay.style.position = 'static';
+}
+
+
+window.onload = function () {
+  interval = setInterval(showSlide, 3000);
+  
+  DOMElements.indicators.forEach((el) => {
+    el.addEventListener("click", () => {
+      currentSlide = el.id;
+      showSlide(currentSlide, true);
+    });
+  });
+};
+
+DOMElements.closeNavBtn.addEventListener("click", closeNavBtnHandler);
+DOMElements.overlay.addEventListener("click", closeOverlayHandler);
+DOMElements.myAccountBtn.addEventListener("click", myAccountBtnHandler);
+DOMElements.closeAccountNav.addEventListener('click', closeAccountNavHandler)
+DOMElements.mobileNavAccount.addEventListener('click', myMobileAccountBtnHandler)
+DOMElements.orderBtn.forEach(btn => btn.addEventListener('click', orderBtnHandler.bind(null, btn)))
