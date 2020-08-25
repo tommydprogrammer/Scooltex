@@ -37,7 +37,7 @@ const navBtnHandler = () => {
     console.log(DOMElements.sideNavNav)
     DOMElements.sideNavNav.style.display = 'none';
     DOMElements.myAccountNav.classList.add('open-account-nav')
-    DOMElements.nav.style.height = '28rem'
+    DOMElements.nav.style.height = '24rem'
   }
   
   const closeAccountNavHandler = () => {

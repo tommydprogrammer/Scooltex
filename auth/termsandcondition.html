@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles/shared.css">
+    <link rel="stylesheet" href="../assets/styles/termsandcondition.css">
+    <!-- Progress bar plugin  -->
+  <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <!-- Scripts -->
+    <script src="../assets/script/sharedscript.js" defer></script>
+    <!-- <script src="../assets/script/register.js" defer></script> -->
+    <title>Scooltec - Terms and Condition</title>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <nav class="side-nav">
+        <span>
+            <button class="close-nav-btn">
+                <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/></svg>            
+            </button>
+            <a class="side-nav__register" href="./signup.html">Register</a>
+            <a class="side-nav__login" href="./login.html">Login</a>
+            <div class="side-nav-nav">
+                <a class="side-nav__myaccount" href="#">My account 
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                        <path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a>
+                <a href="#">Support</a>
+            </div>
+            
+            <ul class="my-account-nav">
+                <li><a class="close-account-nav" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg > back</a></li>
+                <li><a href="#">Scooltec ID</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="./accountsettings.html">Account details</a></li>
+                <li><a href="#">PRO</a></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
+        </span>
+        
+    </nav>
+    <nav class="mobile-nav">
+        <div>
+            <a class="mobile-nav__register" href="./signup.html">Register</a>
+            <a class="mobile-nav__login" href="./login.html">Login</a>
+        </div>
+        <ul class="pages-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/restaurant/index.html">Resturant</a></li>
+            <li><a href="../pages/clothes/index.html">Clothes</a></li>
+            <li><a href="../pages/technology/index.html">Technology</a></li>
+            <li><a href="../pages/lifestyle/index.html">Lifestyle</a></li>
+            <li><a href="../pages/hypermarket/index.html">Hypermarket</a></li>
+            <li><a href="../pages/beauty/index.html">Beauty</a></li>
+            <li><a class="mobile-nav__myaccount" href="#">My account <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        </nav>
+    <header>
+        <div class="topmost-bar">
+            <form action="#">
+                <input class="search-bar" type="text" placeholder="Search...">
+                <button class="search-icon"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></button>
+            </form>
+            <button id="nav-icon">
+                <hr>
+                <hr>
+                <hr>
+            </button>
+        </div>
+       <a href="../index.html"><h1>Scooltec</h1></a>
+        <nav id="nav-list">
+            <ul class="main-nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/restaurant/index.html">Restaurant</a></li>
+                <li><a href="../pages/clothes/index.html">Clothes</a></li>
+                <li><a href="../pages/technology/index.html">Technology</a></li>
+                <li><a href="../pages/lifestyle/index.html">Lifestyle</a></li>
+                <li><a href="../pages/hypermarket/index.html">Hypermarket</a></li>
+                <li><a href="../pages/beauty/index.html">Beauty</a></li>
+            </ul>
+            <div id="progress" class="waiting"></div>
+        </nav>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                $({property: 0}).animate({property: 105}, {
+                    duration: 2500,
+                    step: function() {
+                    var _percent = Math.round(this.property);
+                    $("#progress").css("width",  _percent+"%");
+                    if(_percent == 105) {
+                        $("#progress").addClass("done");
+                    }
+                    },
+                });
+                });
+            </script>
+    </header>
+
+    <main class="login__page">
+        
+        <h1 class="heading">Termeni & Conditii</h1>
+        <h2>Bine ați venit la Scooltec</h2>
+        <p>Această pagină (împreună cu documentele la care se
+           face referire) vă indică termenii pentru care puteți
+           utiliza site-ul nostru web (www.scooltec.com) 
+           împreună cu site-urile noastre web, aplicațiile mobile 
+           și alte servicii furnizate de noi (colectiv, „Platforma”), 
+           fie ca invitat sau utilizator înregistrat. Acestea se 
+           aplică accesului sau utilizării Platformei noastre în 
+           orice scop, inclusiv accesarea oricărui Conținut 
+           încărcat de către Partenerii noștri (în mod colectiv 
+           „Serviciile”), Vă rugăm să citiți acești Termeni de 
+           servicii și Politica noastră de confidențialitate 
+           („Termeni”) și orice alți termeni sau politicile pe care 
+           le putem încărca pe Platforma noastră din când în 
+           când, cu atenție înainte de a începe să utilizați 
+           Serviciile noastre. Accesând Platforma noastră sau 
+           folosind Serviciile noastre (care, în sensul acestor 
+           Termeni de serviciu, include clic pe „Alăturați-vă 
+           acum”, răsfoind, descărcând, instalând sau accesând 
+           altfel, vizualizând sau folosind altfel Serviciile), 
+           confirmați că acceptați aceste Termenii, sunt eligibili 
+           pentru Servicii și sunteți de acord să respectați 
+           Termenii. Dacă nu sunteți de acord cu acești Termeni 
+           sau nu sunteți eligibil, nu aveți voie să utilizați 
+           Platforma sau Serviciile și trebuie să încetați să 
+           utilizați sau să accesați Serviciile.</p>
+
+        <hr>
+
+        <h2>Despre noi</h2>
+        <p>scooltec.com este un site operat de EDUSCOOL LTD, 
+            care se tranzacționează ca SCOLLTEC („noi”, „ai 
+            noștri” și „noi”). Suntem înregistrați în Marea Britanie 
+            și Țara Galilor sub numărul companiei 12533171 și 
+            avem sediul social la casa Kemp 160, City Road
+            Londo, EC1V 2NX
+            Marea Britanie</p>
+
+        <hr>
+
+        <h2>Accesul la website-ul nostru</h2>
+        <p>Accesul la Site-ul nostru este permis temporar și ne 
+           rezervăm dreptul de a retrage sau modifica serviciul 
+           pe care îl oferim pe Site-ul nostru fără notificare 
+           (a se vedea mai jos). Nu vom fi răspunzători dacă, din 
+           orice motiv, Site-ul nostru nu este disponibil în orice 
+           moment sau pentru nicio perioadă.</p>
+
+        <p>Din când în când, putem restricționa accesul la unele 
+           părți ale Site-ului nostru sau la întregul site, la 
+           utilizatorii care s-au înregistrat la noi.</p>
+            
+        <p>Dacă alegeți sau vi se oferă un cod de identificare a 
+           utilizatorului, o parolă sau orice altă informație ca 
+           parte a procedurilor noastre de securitate în urma 
+           înregistrării dvs. la noi, trebuie să tratați aceste 
+           informații ca fiind confidențiale și nu trebuie să le 
+           dezvăluiți niciunei terț. Avem dreptul de a dezactiva 
+           orice cod de identificare sau parolă, indiferent dacă 
+           ați fost ales de dvs. sau alocat de noi, în orice 
+           moment, dacă în opinia noastră nu ați respectat 
+           vreuna dintre prevederile acestor Termeni.</p>    
+            
+        <p>Sunteți responsabil pentru a face toate 
+           aranjamentele necesare pentru a avea acces la 
+           site-ul nostru. De asemenea, sunteți responsabil să 
+           vă asigurați că toate persoanele care accesează 
+           site-ul nostru prin intermediul conexiunii dvs. de 
+           internet sunt conștienți de acești termeni și că se 
+           conformează acestora.</p>    
+            
+        <p>Prin obținerea unui cod promoțional sau accesarea 
+           unei oferte sau reduceri prin intermediul site-ului 
+           nostru, recunoașteți că o astfel de ofertă sau 
+           reducere este supusă unor termeni și condiții ale 
+           terților, a căror legătură este furnizată pe site-ul 
+           nostru și este responsabilitatea dvs. să revizuiți 
+           acești termeni și condiții înainte de a încheia orice 
+           tranzacție cu terțul.</p>    
+            
+        <p>Serviciul Scooltec nu este destinat 
+           persoanelor cu vârsta sub 16 ani. Dacă 
+           aveți sub 16 ani, nu aveți voie să utilizați 
+           serviciul Scooltec. Folosind serviciul, 
+           confirmați că aveți cel puțin 16 ani. Dacă</p>    
+
+        <hr>
+
+        <h2>Drepturi pentru proprietate</h2>
+        <p>Suntem proprietarul tuturor drepturilor 
+           de proprietate intelectuală de pe site-ul 
+           nostru. Cu excepția informațiilor care au 
+           fost culese de pe alte site-uri web și 
+           reclame de produse și companii, deținem, 
+           de asemenea, drepturile de proprietate 
+           intelectuală asupra materialelor publicate 
+           pe Site. Aceste lucrări sunt protejate de 
+           legile și tratatele privind drepturile de 
+           autor din întreaga lume. Toate aceste 
+           drepturi sunt rezervate.</p>
+
+        <p>Puteți imprima o copie și puteți descărca 
+            extrase ale oricărei pagini de pe site-ul 
+            nostru, pentru referință personală și 
+            puteți atrage atenția altora asupra 
+            materialelor postate pe site-ul nostru, cu 
+            excepția cazului în care este recomandat.</p>    
+            
+        <p>Nu trebuie să modificați niciun fel de 
+           hârtie sau copii digitale ale materialelor 
+           pe care le-ați imprimat sau descărcat în 
+           niciun fel și nu trebuie să folosiți 
+           ilustrații, fotografii, secvențe video sau 
+           audio sau orice grafică separat de orice 
+           text însoțitor. a oricăror participanți 
+           identificați) în calitate de autori ai 
+           materialelor de pe site-ul nostru trebuie 
+           să fie întotdeauna recunoscuți.</p>    
+            
+        <p>Nu trebuie să utilizați nicio parte a 
+           materialelor de pe Site-ul nostru în scop 
+           comercial fără a obține mai întâi o licență 
+           de la noi pentru a face acest lucru.</p>    
+            
+        <p>Dacă imprimați, copiați sau descărcați 
+           orice parte a site-ului nostru, încălcând 
+           acești Termeni, dreptul dvs. de a utiliza</p>
+
+        <hr>
+
+        <h2>Site-ul nostru se schimbă regulat</h2>
+        <p>Ne propunem să actualizăm site-ul nostru 
+            în mod regulat și putem modifica 
+            conținutul în orice moment. Dacă apare 
+            nevoia, putem suspenda accesul la Site-ul 
+            nostru sau îl putem închide la nesfârșit. 
+            Orice material de pe site-ul nostru poate 
+            fi depășit la un moment dat și nu avem 
+            obligația de a actualiza acest material.</p>
+
+        <h2>Liabilitatea noastra</h2>
+        <p>Materialele afișate pe site-ul nostru sunt 
+            furnizate fără garanții, condiții sau 
+            garanții cu privire la exactitatea acestuia. 
+            În măsura permisă de lege, noi și orice 
+            terți conectați la noi excludem în mod 
+            expres:</p>
+            
+        <p>Toate condițiile, garanțiile și alți termeni 
+            care altfel ar putea fi implicați prin 
+            statut, drept comun sau legea echității.</p>    
+            
+        <p>Orice răspundere pentru orice pierdere 
+            sau deteriorare directă, indirectă sau 
+            consecventă a oricărui utilizator în 
+            legătură cu Site-ul nostru sau în legătură 
+            cu utilizarea, incapacitatea de utilizare 
+            sau rezultatele utilizării Site-ului nostru, 
+            a oricăror site-uri web legate de acesta și 
+            a oricăror materiale postate asupra 
+            acesteia, inclusiv, fără a se limita la orice 
+            răspundere pentru:</p>    
+            
+        <p>pierderea veniturilor sau a veniturilor;
+           pierderea afacerii;
+           pierderea profiturilor sau a contractelor;
+           pierderea economiilor anticipate;
+           pierderea de date;
+           pierderea bunăvoinței;
+           managementul irosit sau timpul de birou; 
+           și,</p>
+            
+        <p>pentru orice alte pierderi sau daune de 
+           orice fel, oricât ar fi cauzate și cauzate 
+           de tort (inclusiv neglijență), încălcarea 
+           contractului sau altfel, chiar dacă este 
+           previzibil. Acest lucru nu afectează 
+           răspunderea noastră pentru deces sau 
+           vătămare corporală cauzată de neglijența 
+           noastră, nici răspunderea pentru 
+           denunțarea frauduloasă sau prezentarea 
+           greșită cu privire la o chestiune 
+           fundamentală și nici o altă răspundere 
+           care nu poate fi exclusă sau limitată în 
+           conformitate cu legislația aplicabilă.</p>   
+           
+        <hr>
+
+        <h2>Informații despre dvs. și vizitele dvs. pe 
+            site-ul nostru</h2>
+        <p>Procesăm informații despre dvs. în 
+           conformitate cu Politica noastră de 
+           confidențialitate Utilizând Site-ul nostru, 
+           sunteți de acord cu o astfel de prelucrare 
+           și garantați că toate datele furnizate de 
+           dvs. sunt corecte. Folosim cookie-uri și 
+           alte beacon-uri în conformitate cu Politica 
+           noastră privind cookie-urile.</p>
+
+        <p>Folosind acest site web, sunteți de acord 
+           în conformitate cu Regulamentul 6 din 
+           Regulamentul privind confidențialitatea și 
+           comunicațiile electronice 2003 (PECR), 
+           sunteți de acord cu următoarele:</p>    
+            
+        <p>Puteți refuza să acceptați cookie-urile 
+           de pe acest site web prin configurarea 
+           browserului dvs. pentru a refuza 
+           cookie-urile din domeniul myunidays.com. 
+           Procedând astfel, o parte din 
+           funcționalitatea site-ului nostru va fi 
+           limitată și este posibil să nu vă putem 
+           afișa informații exacte. <br>    
+           Prin înregistrarea sau logarea pe site-ul 
+           web, ne dați în mod explicit 
+           consimțământul că putem seta un cookie 
+           în acest scop. Este imposibil să vă 
+           conectați la site-ul web fără ca noi să 
+           stabilim un cookie. Aceasta este 
+           reglementată la punctul 4 (a) și 4 (b) din 
+           reglementări.
+        
+        <p>Puteți șterge orice cookie-uri terță parte 
+           care au fost setate oricând prin 
+           intermediul browserului.</p>
+
+        <hr>
+
+        <h2>Viruși, hacking și alte infracțiuni</h2>
+        <p>Nu trebuie să folosiți greșit site-ul nostru introducând 
+           în cunoștință de viruși, troieni, viermi, bombe logice 
+           sau orice alt material care este dăunător sau 
+           dăunător tehnologic. Nu trebuie să încercați să obțineți 
+           acces neautorizat la Site-ul nostru, la serverul pe care 
+           este depozitat Site-ul nostru sau la orice server, 
+           computer sau bază de date conectat la Site-ul nostru. Nu 
+           trebuie să atacați site-ul nostru printr-un atac de refuz 
+           de serviciu sau un atac distribuit de refuz de serviciu. 
+           Încălcând această prevedere, ați comite o infracțiune în 
+           conformitate cu legea privind utilizarea abuzivă a 
+           computerului din 1990. Vom raporta orice astfel de 
+           încălcare la legea relevantă autoritățile de executare 
+           și vom coopera cu aceste autorități, dezvăluindu-le 
+           identitatea. În cazul unei astfel de încălcări, dreptul 
+           dvs. de a folosi Site-ul nostru va înceta imediat.</p>
+
+        <p>Nu vom fi răspunzători pentru nicio pierdere sau pagubă 
+           cauzată de un atac distribuit de refuz de serviciu, 
+           viruși sau alte materiale dăunătoare din punct de vedere 
+           tehnologic care vă pot infecta echipamentele 
+           computerizate, programele computerizate, datele sau alte 
+           materiale de proprietate datorită utilizării site-ului 
+           nostru sau la descărcarea oricărui material publicat pe 
+           acesta sau pe orice site web legat de acesta</p>
+           
+        <hr>
+
+        <h2>Accesul la website-ul nostru</h2>
+        <p>Accesul la Site-ul nostru este permis temporar și ne 
+           rezervăm dreptul de a retrage sau modifica serviciul 
+           pe care îl oferim pe Site-ul nostru fără notificare 
+           (a se vedea mai jos). Nu vom fi răspunzători dacă, 
+           din orice motiv, Site-ul nostru nu este disponibil 
+           în orice moment sau pentru nicio perioadă.</p>
+
+        <p>Din când în când, putem restricționa accesul la unele 
+           părți ale Site-ului nostru sau la întregul site, la 
+           utilizatorii care s-au înregistrat la noi.</p>    
+            
+        <p>Dacă alegeți sau vi se oferă un cod de identificare a 
+           utilizatorului, o parolă sau orice altă informație ca 
+           parte a procedurilor noastre de securitate în urma 
+           înregistrării dvs. la noi, trebuie să tratați aceste 
+           informații ca fiind confidențiale și nu trebuie să le 
+           dezvăluiți niciunei terț. Avem dreptul de a dezactiva 
+           orice cod de identificare sau parolă, indiferent dacă 
+           ați fost ales de dvs. sau alocat de noi, în orice 
+           moment, dacă în opinia noastră nu ați respectat vreuna 
+           dintre prevederile acestor Termeni.</p>    
+            
+        <p>Sunteți responsabil pentru a face toate aranjamentele 
+           necesare pentru a avea acces la site-ul nostru. De 
+           asemenea, sunteți responsabil să vă asigurați că toate 
+           persoanele care accesează site-ul nostru prin 
+           intermediul conexiunii dvs. de internet sunt conștienți 
+           de acești termeni și că se conformează acestora.</p>    
+            
+        <p>Prin obținerea unui cod promoțional sau accesarea unei 
+            oferte sau reduceri prin intermediul site-ului nostru, 
+            recunoașteți că o astfel de ofertă sau reducere este 
+            supusă unor termeni și condiții ale terților, a căror 
+            legătură este furnizată pe site-ul nostru și este 
+            responsabilitatea dvs. să revizuiți acești termeni și 
+            condiții înainte de a încheia orice tranzacție cu 
+            terțul.</p>    
+            
+        <p>Serviciul Scooltec nu este destinat persoanelor cu 
+           vârsta sub 16 ani. Dacă aveți sub 16 ani, nu aveți voie 
+           să utilizați serviciul Scooltec. Folosind serviciul, 
+           confirmați că aveți cel puțin 16 ani. Dacă aveți vârsta 
+           de 18 ani sau mai mult, confirmați că sunteți pe deplin 
+           capabili și competenți să introduceți termenii, 
+           condițiile, obligațiile, confirmările, reprezentările 
+           și garanțiile prevăzute în acești Termeni și să 
+           respectați și respectați acești Termeni.</p>
+           
+        <hr>
+
+        <h2>Link la site-ul nostru</h2>
+        <p>Puteți face link către pagina noastră de pornire, cu 
+           condiția să faceți acest lucru într-un mod corect și 
+           legal și să nu deteriorați reputația noastră sau să 
+           profitați de ea, dar nu trebuie să stabiliți o 
+           legătură astfel încât să sugereze vreo formă de 
+           asociere , aprobare sau aprobare din partea noastră, 
+           în cazul în care nu există.</p>
+
+        <p>Nu trebuie să stabiliți un link de pe niciun site 
+            web care nu este deținut de dvs. Site-ul nostru 
+            nu trebuie încadrat pe niciun alt site și nici nu 
+            puteți crea o legătură către nicio parte a Site-ului 
+            nostru, în afară de pagina de pornire. Ne rezervăm 
+            dreptul de a retrage permisiunea de conectare fără 
+            notificare prealabilă.</p>    
+            
+        <p>Dacă doriți să folosiți orice material pe site-ul 
+            nostru, în afară de cel stabilit mai sus, vă rugăm 
+            să adresați solicitarea dvs. la adresa adresei de 
+            e-<a href="mailto: ask@scooltec.com">ask@scooltec.com</a></p>  
+
+        <hr>
+
+        <h2>Link-uri de pe site-ul nostru</h2>
+        <p>În cazul în care Site-ul nostru conține link-uri către 
+           alte site-uri și resurse furnizate de terți, aceste 
+           link-uri sunt furnizate numai pentru informațiile dvs. 
+           Nu avem niciun control asupra conținutului acelor 
+           site-uri sau resurse și nu acceptăm niciun fel de 
+           responsabilitate pentru acestea sau pentru orice 
+           pierdere sau pagubă care ar putea rezulta din 
+           utilizarea dvs. de către acestea.</p>
+
+        <hr>
+
+        <h2>Jurisdicția și legea aplicabilă</h2>
+        <p>Instanțele engleze vor avea jurisdicție exclusivă 
+           asupra oricărei cereri care rezultă din sau vizează o 
+           vizită pe site-ul nostru, deși ne păstrăm dreptul de a 
+           înainta o acțiune împotriva dvs. pentru încălcarea 
+           acestor condiții în țara dvs. de reședință sau în orice 
+           altă țară relevantă. Acești Termeni sunt reglementate de 
+           legislația engleză.</p>
+
+        <hr>
+
+        <h2>Variații</h2>
+        <p>Putem revizui acești Termeni în orice moment, 
+           modificând această pagină. Este de așteptat să 
+           verificați această pagină din când în când pentru a 
+           lua la cunoștință orice modificări pe care le-am făcut, 
+           deoarece acestea sunt obligatorii pentru dvs. Unele 
+           dintre prevederile cuprinse în acești Termeni pot fi, 
+           de asemenea, înlocuite prin dispoziții sau avize 
+           publicate în altă parte pe Site-ul nostru.</p>
+
+        <hr>
+
+        <h2>Plati</h2>
+        <p>Toate platile finalizate  sunt  nerambursabile.</p>
+
+        <hr>
+
+        <h2>Contact</h2>
+        <p>Dacă aveți întrebări cu privire la materialele care apar 
+           pe site-ul nostru, vă rugăm să contactați 
+           ask@scooltec.com.</p>
+            
+
+    </main>
+
+
+    <footer>
+        <nav class="footer-nav">
+            <ul class="more">
+                <li><a href="#">ANPC</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <address class="contact">
+                <img src="../assets/images/icons/facebook-f-brands.svg" alt="">
+                <img src="../assets/images/icons/instagram-brands.svg" alt="">
+                <address>ask@scooltec.com</address>
+            </address>
+        </nav>
+        <nav class="footer-nav copywright">
+            <p>Scooltec &copy <template>year</template>. All right reserved</p>
+            <span>
+                <ul>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Private Policy</a></li>
+                </ul>
+            </span>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

@@ -167,6 +167,7 @@ const orderBtnHandler = (btn) => {
       </div>
     </div>
   `
+  DOMElements.overlay.style.backgroundColor = 'rgba(255, 255, 255, 0.822)'
   DOMElements.overlay.style.position = 'fixed';
   console.log(btn.closest('section'))
   
@@ -181,6 +182,7 @@ const orderBtnHandler = (btn) => {
 const closeOrderPopup = () => {
   document.querySelector('#order').remove();
   DOMElements.overlay.style.position = 'static';
+  DOMElements.overlay.style.backgroundColor = 'rgba(112, 112, 112, 0.055)'
 }
 
 
