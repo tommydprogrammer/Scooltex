@@ -620,6 +620,74 @@ button:focus {
  
  }
 
+ /************* User Access *************/
+
+#user-access {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(17.7rem, 1fr)); */
+  /* grid-column-gap: 1.5rem; */
+  /* row-gap: 2.5rem; */
+  /* grid-template-rows: 10rem; */
+  color: #ffffff;
+  margin: 3.5rem auto;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login div, .register div {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#user-access div .discount {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.66);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+}
+
+#user-access p {
+  margin: 0.6rem;
+}
+
+#user-access h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+#user-access p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+
+.register, .login {
+  text-align: left;
+  border-radius: 20px;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--red-color);
+  position: relative;
+  height: 10rem;
+  min-width: 20rem;
+}
+
+.login {
+  margin-right: 10px;
+}
+
 /*******************************/ 
 /************Footer*************/
 /*******************************/
@@ -657,8 +725,6 @@ address {
 }
 
 .footer-nav:first-of-type {
-  /* margin-bottom: 4rem; */
-  /* height: 6rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -667,7 +733,6 @@ address {
 .footer-nav .more {
   display: flex;
   justify-content: center;
-  /* font-size: 1.3rem; */
   padding: 0;
 }
 
@@ -743,28 +808,3 @@ address {
     position: static;
   }
 }
-
-/* @media (max-width: 650px) {
-  .topmost-bar form {
-  }
-
-  #intro {
-    grid-template-columns: 1fr;
-}
-
-  .footer-nav {
-    flex-direction: column;
-  }
-
-  .footer-nav ul {
-    flex-direction: column;
-  }
-
-  .footer-nav ul li {
-    margin: 1rem 0;
-  }
-
-  .topmost-bar {
-    padding: 0 1rem;
-  }
-} */
