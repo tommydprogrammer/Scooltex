@@ -1,9 +1,7 @@
 /************* top products  *************/
 
 .top-products ul {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  justify-content: flex-start;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 0.7rem;
@@ -17,6 +15,7 @@
   row-gap: 0.8rem;
   background-color: #ffffff;
   box-shadow: 0 3px 3px var(--shadow-color);
+  /* margin-right: 10px; */
 }
 
 .top-product-text {
@@ -28,8 +27,8 @@
 }
 
 .top-product-brand {
-  font-size: 0.8rem;
-  display: flex;
+    font-size: 0.8rem;
+    display: flex;
   align-items: center;
   color: var(--grey-text-color);
   font-weight: 700;
@@ -57,7 +56,7 @@
   background: no-repeat center/cover url(../images/movie\ image.jpg);
 }
 
- .top-product-sample {
+.top-product-sample {
   overflow: hidden;
   position: relative;
 }
@@ -69,16 +68,34 @@
   left: -2rem;
 } 
 
+@media (max-width: 640px) {
+  .top-products ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+  }
+  
+  .top-products-item {
+    margin-right: 10px;
+    min-width: 13.8rem;
+  }
+  
+}
+
 /************* User Access *************/
 
 #user-access {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17.7rem, 1fr));
-  grid-column-gap: 1.5rem;
-  row-gap: 2.5rem;
-  grid-template-rows: 10rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(17.7rem, 1fr)); */
+  /* grid-column-gap: 1.5rem; */
+  /* row-gap: 2.5rem; */
+  /* grid-template-rows: 10rem; */
   color: #ffffff;
   margin: 3.5rem auto;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .login div, .register div {
@@ -126,6 +143,12 @@
   justify-content: center;
   background-color: var(--red-color);
   position: relative;
+  height: 10rem;
+  min-width: 20rem;
+}
+
+.login {
+  margin-right: 10px;
 }
 
 /************* Product  List*************/
@@ -217,6 +240,20 @@ p.limited-offer {
   right: -148px;
   top: -204px;
   width: 300px;
+}
+
+
+@media (max-width: 425px) {
+ .product-list {
+   display: flex;
+   justify-content: flex-start;
+   overflow-x: auto;
+ }
+
+  .product-item {
+   min-width: 13.8rem;
+ } 
+
 }
 
 @media (max-width: 380px) {

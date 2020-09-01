@@ -29,12 +29,16 @@ body {
   text-align: center;
   width: 100%;
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 main {
-  padding: 3rem 0;
+  padding: 3rem 8px;
   padding-bottom: 8rem;
   overflow: hidden;
+  width: 100%;
 }
 
 button {
@@ -42,7 +46,7 @@ button {
 }
 
 section {
-  width: 42.5rem;
+  max-width: 42.6rem;
   margin: 0 auto;
 }
 
@@ -603,13 +607,25 @@ button:focus {
   outline: none;
 }
 
+@media (max-width: 425px) {
+
+  #intro {
+    height: auto;
+  }
+
+  .carousel-item.active {
+    grid-template-columns: 1fr;
+      grid-template-rows: 17.5rem 14rem;
+  }
+ 
+ }
+
 /*******************************/ 
 /************Footer*************/
 /*******************************/
 
 
 footer {
-  /* padding: 3rem 0 0 0; */
   background-color: var(--red-color);
   color: #ffffff;
   font-size: 1rem;
@@ -634,14 +650,15 @@ address {
 
 .footer-nav {
   position: relative;
-  /* font-size: 1.2rem; */
-  /* font-weight: 500; */
   padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-nav:first-of-type {
   /* margin-bottom: 4rem; */
-  height: 6rem;
+  /* height: 6rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -677,18 +694,40 @@ address {
   font-weight: 600;
 }
 
+@media (max-width: 425px) {
+  footer {
+    padding: 10px;
+  }
+  .footer-nav.copywright {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-nav ul li {
+    margin-left: 0;
+    margin: 10px 0;
+}
+ }
+
 @media (max-width: 780px) {
   #nav-list {
     display: none;
   }
 
-  header {
-    height: 160px;
-  }
-
   .topmost-bar {
     display: flex;
     justify-content: space-between;
+    padding: 0 1rem;
   }
 
   .topmost-bar form {
@@ -703,18 +742,10 @@ address {
   .contact {
     position: static;
   }
-
-  .footer-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   .topmost-bar form {
-    /* width: 81%; */
   }
 
   #intro {
@@ -736,4 +767,4 @@ address {
   .topmost-bar {
     padding: 0 1rem;
   }
-}
+} */
