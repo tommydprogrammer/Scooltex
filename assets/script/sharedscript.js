@@ -90,7 +90,7 @@ function handleTouchMove(evt) {
     /*most significant*/
     if (xDiff > 0) {
       /* left swipe */
-      currentSlide--;
+      currentSlide++;
       DOMElements.activeCarousel.classList.remove("active");
       DOMElements.activeIndicator.classList.remove("active");
     
@@ -102,8 +102,12 @@ function handleTouchMove(evt) {
     
     } else {
       /* right swipe */
-      currentSlide++;
+      currentSlide--;
       
+      if (currentSlide >= DOMElements.slides.length) {
+        currentSlide = 0;
+        console.log("reset");
+      }
       DOMElements.activeCarousel.classList.remove("active");
       DOMElements.activeIndicator.classList.remove("active");
     
