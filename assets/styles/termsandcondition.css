@@ -10,7 +10,7 @@ main h1 {
     margin: 4.5rem 0;
 }
 
-h2, p {
+h2, main p {
     color: var(--grey-text-color);
     text-align: left;
 }
@@ -32,3 +32,9 @@ p a {
 /* p {
     color: var(--grey-text-color);
 } */
+
+@media (max-width: 425px) {
+    main {
+        padding: 0 2rem;
+    }
+}

@@ -79,7 +79,7 @@ header {
   justify-self: center;
 }
 
-.topmost-bar form {
+.topmost-bar div {
   grid-area: search-bar;
   position: relative;
 }
@@ -431,11 +431,16 @@ a.mobile-nav__register:hover {
   background-color: #f2f2f2;
   box-shadow: 0 0 2px 2px var(--shadow-color);
   width: 28rem;
+  height: 25rem;
   padding: 1.5rem;
   color: var(--grey-text-color);
-  position: absolute;
-  z-index: 400;
+  position: fixed;
+  z-index: 500;
   transform: translatex(120px) translateY(65px);
+  left: 50%;
+  top: 50%;
+  margin-top: -17rem;
+  margin-left: -21.5rem;
 }
 
 .logo {
@@ -691,6 +696,7 @@ button:focus {
 /**************************************/ 
 .privacy-terms {
   position: relative;
+  z-index: -200;
 }
 
 .privacy {
@@ -779,7 +785,7 @@ address {
     padding: 0 1rem;
   }
 
-  .topmost-bar form {
+  .topmost-bar div {
     width: 81%;
   }
 
@@ -850,4 +856,30 @@ address {
   .contact {
     position: static;
   }
+
+  #order {
+    width: 19rem;
+    height: 23rem;
+    margin-top: -17rem;
+    margin-left: -17rem;
+}
+
+.logo div.brand-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+#order p {
+  font-size: 0.8rem;
+}
+
+div.block {
+  height: 1.5rem;
+  width: 8rem;
+}
+
+div#order .cta {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
 }

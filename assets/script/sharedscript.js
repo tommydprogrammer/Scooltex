@@ -256,7 +256,7 @@ const orderBtnHandler = (btn) => {
   DOMElements.overlay.style.position = "fixed";
   console.log(btn.closest("section"));
 
-  btn.closest("section").insertAdjacentHTML("afterbegin", orderElement);
+  document.body.insertAdjacentHTML("afterbegin", orderElement);
   const order = document.querySelector("a.cta");
   order.addEventListener("click", () => {
     closeOrderPopup();

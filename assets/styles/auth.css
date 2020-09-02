@@ -22,6 +22,10 @@ a {
   color: var(--red-color);
 }
 
+label {
+  width: 100%;
+}
+
 main form input {
   background-color: transparent;
   padding-left: 11px;
@@ -35,7 +39,8 @@ main form input {
   font-weight: 400;
 }
 
-main form input:not(:first-of-type) {
+main form input:not(:first-of-type),
+label:not(:first-of-type) {
   margin-top: 1.4rem;
 }
 
@@ -93,7 +98,7 @@ form input[type="checkbox"]:checked {
 
 label[for="terms"] {
   text-align: left;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .encrypt-info {
@@ -194,7 +199,7 @@ input[type="file"] {
 }
 
 label[for="upload"] {
-  width: 100%;
+  /* width: 100%; */
   height: 8.4rem;
   padding: 0 11px 11px 11px;
   color: inherit;
@@ -243,14 +248,49 @@ label[for="upload"] div p {
   text-align: left;
 }
 
+/*Account settings page */
+main.account-settings hr {
+  width: 100%;
+  border: 0.5px solid var(--grey-text-color);
+  margin: 16px 0;
+}
+
+main.account-settings p {
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+label[for="same-address"],
+label[for="diff-address"],
+main.account-settings p.delivery-address {
+  text-align: left;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+main.account-settings p.delivery-address {
+  margin-bottom: 10px;
+}
+
+label[for="same-address"] input,
+label[for="diff-address"] input {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 @media (max-width: 425px) {
   main {
     padding: 1rem 8px;
-}
+  }
 
   .heading {
     font-size: 1.6rem;
-    margin-bottom:  2rem;
+    margin-bottom: 2rem;
   }
 
   main form {
@@ -261,6 +301,20 @@ label[for="upload"] div p {
     width: 100%;
     height: 2.5rem;
     font-size: 0.7rem;
+  }
+
+  #year-of-study,
+  #course-leight,
+  label[for="upload"] {
+    font-size: 0.7rem;
+  }
+
+  .checkbox {
+    margin: 0;
+  }
+
+  .verification-page__info-heading {
+    font-size: 1rem;
   }
 
   .login-page,
@@ -276,9 +330,41 @@ label[for="upload"] div p {
 
   main button {
     height: 2.5rem;
+  }
+
+  main form input:not(:first-of-type),
+  label:not(:first-of-type) {
+    margin-top: 0.6rem;
+  }
+
+  .verification-page__info-heading {
+    width: 100%;
+  }
+
+  label[for="same-address"] input,
+  label[for="diff-address"] input {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  label[for="same-address"],
+  label[for="diff-address"],
+  main.account-settings p.delivery-address {
+    font-size: 0.8rem;
+  }
 }
 
-main form input:not(:first-of-type) {
-  margin-top: 0.6rem;
+.error {
+  border: 1px solid var(--red-color);
 }
+
+.error + span {
+  color: var(--red-color);
+  font-size: 0.7rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 3px;
+  /* display: none; */
 }

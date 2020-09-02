@@ -9,13 +9,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/styles/shared.css">
     <link rel="stylesheet" href="../assets/styles/auth.css">
+    <!-- Scripts -->
     <!-- Progress bar plugin  -->
   <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <!-- Scripts -->
     <script src="../assets/script/auth.js" defer></script>
-  <script src="../assets/script/formvalidation.js" defer></script>
-    
-    <title>Scooltec - Register</title>
+    <script src="../assets/script/formvalidation.js" defer></script>
+    <title>Payment Details</title>
 </head>
 
 <body>
@@ -38,7 +37,7 @@
                 <li><a class="close-account-nav" href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg > back</a></li>
                 <li><a href="#">Scooltec ID</a></li>
                 <li><a href="#">Notification</a></li>
-                <li><a href="#">Account details</a></li>
+                <li><a href="./accountsettings.html">Account details</a></li>
                 <li><a href="#">PRO</a></li>
                 <li><a href="#">Log Out</a></li>
             </ul>
@@ -103,28 +102,58 @@
             </script>
     </header>
 
-    <main class="signup__page">
-        <h1 class="heading">Join Scooltec now</h1>
+    <main class="account-settings">
+        <h1 class="heading">Account settings</h1>
 
         <form action="">
-            <label for="user-email">
-                <input type="email" name="user-email" id="user-email" placeholder="Email">
+
+            <label for="first-name">
+                <input type="text" name="first-name" id="first-name" placeholder="Name">
             </label>
-            <label for="confirm-email">
-                <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirm email">
+            <label for="surname">
+                <input type="text" name="surname" id="surname" placeholder="Surname">
             </label>
-            <label for="user-password">
-                <input type="password" name="user-password" id="user-password" placeholder="Password">
+            <label for="home-address">
+                <input type="text" name="home-address" id="home-address" placeholder="Home address">
             </label>
-            <label for="confirm-password">
-                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password">
+            <label for="town">
+                <input type="text" name="town" id="town" placeholder="Town">
             </label>
-            <label class="checkbox" for="terms"><input type="checkbox" name="terms" id="terms"><span>I accept and read <a href="#">Term & Condition and Private policy</a> and I <br>
-                 confirm that  I'm 16 year of age or older.</span></label>
-            <input class="join-now" type="submit" value="Join now">
-            <button class="login">
-                <a href="login.html">Login</a>
-            </button>
+            <label for="country">
+                <input type="text" name="country" id="country" placeholder="Country">
+            </label>
+            <label for="post-code">
+                <input type="text" name="post-code" id="post-code" placeholder="Post Code">
+            </label>
+
+            <hr>
+            <p>Delivery Address</p>
+            <label for="same-address">
+                <input type="checkbox" name="same-address" id="same-address">
+                Same as above
+            </label>
+            <label for="diff-address">
+                <input type="checkbox" name="diff-address" id="diff-address">
+                Different addresss
+            </label>
+            <hr>
+
+
+            <p class="delivery-address">Add delivery address</p>
+            <input type="text" name="surname" id="surname" placeholder="Home address">
+            <label for="town">
+                <input type="text" name="town" id="town" placeholder="Town">
+            </label>
+            <label for="country">
+                <input type="text" name="country" id="country" placeholder="Country">
+            </label>
+            <label for="post-code">
+                <input type="text" name="post-code" id="post-code" placeholder="Post Code">
+            </label>
+            <input class="account-setting" type="submit" value="Pay now">
+            <!-- <button class="login">
+                <a href="#">Save my setting</a>
+            </button> -->
         </form>
 
     </main>
