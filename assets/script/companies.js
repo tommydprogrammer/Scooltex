@@ -10,12 +10,6 @@ const DOMElements = {
     mobileNavAccount: document.querySelector(".mobile-nav__myaccount"),
     pagesNav: document.querySelector(".pages-nav"),
     closeAccountNav: document.querySelector('.close-account-nav'),
-    // indicators: document.querySelectorAll(".indicator"),
-    // slides: document.querySelectorAll(".carousel-item"),
-    // activeCarousel: document.querySelector(".carousel-item.active"),
-    // activeIndicator: document.querySelector(".indicator.active"),
-    // orderBtn: document.querySelectorAll(".order-btn")
-  
   };
 
   
@@ -24,12 +18,14 @@ const navBtnHandler = () => {
     DOMElements.nav.classList.add("display-nav");
     DOMElements.navIcon.style.display = "none";
     DOMElements.overlay.style.position = "fixed";
+    DOMElements.overlay.style.display = "block";
   };
   
   const closeNavBtnHandler = () => {
     DOMElements.nav.classList.remove("display-nav");
     DOMElements.navIcon.style.display = "flex";
     DOMElements.overlay.style.position = "static";
+    DOMElements.overlay.style.display = "none";
     closeAccountNavHandler()
   };
   
@@ -54,11 +50,13 @@ const navBtnHandler = () => {
   const mobileNavHandler = () => {
     DOMElements.mobileNav.style.display = 'block';
     DOMElements.overlay.style.position = 'fixed';
+    DOMElements.overlay.style.display = "block";
   }
   
   const closeMobileNavHandler = () => {
     DOMElements.mobileNav.style.display = 'none';
     DOMElements.overlay.style.position = 'static';
+    DOMElements.overlay.style.display = "none";
   } 
   
   const closeOverlayHandler = () => {
@@ -74,6 +72,7 @@ const navBtnHandler = () => {
     DOMElements.mobileNav.replaceChild(DOMElements.myAccountNav, DOMElements.pagesNav)
     DOMElements.myAccountNav.classList.add('mobile-my-account-nav')
     DOMElements.overlay.style.position = 'fixed';
+    DOMElements.overlay.style.display = "block";
   }
   
   DOMElements.navIcon.addEventListener("click", () => {

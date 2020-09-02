@@ -14,6 +14,7 @@ main form {
 
 header {
   padding: 1rem 0;
+  height: 100px;
 }
 
 header .topmost-bar span {
@@ -228,9 +229,14 @@ label {
 /****************************/
 /*********Career page********/
 /****************************/
-
 main.career-page {
-  height: 40rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main.career-page div {
   display: flex;
   flex-direction: column;
   justify-content: center;

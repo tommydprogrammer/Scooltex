@@ -144,12 +144,14 @@ const navBtnHandler = () => {
   DOMElements.nav.classList.add("display-nav");
   DOMElements.navIcon.style.display = "none";
   DOMElements.overlay.style.position = "fixed";
+  DOMElements.overlay.style.display = "block";
 };
 
 const closeNavBtnHandler = () => {
   DOMElements.nav.classList.remove("display-nav");
   DOMElements.navIcon.style.display = "flex";
   DOMElements.overlay.style.position = "static";
+  DOMElements.overlay.style.display = "none";
   closeAccountNavHandler();
 };
 
@@ -177,12 +179,14 @@ const closeAccountNavHandler = () => {
 const mobileNavHandler = () => {
   DOMElements.mobileNav.style.display = "block";
   DOMElements.overlay.style.position = "fixed";
+  DOMElements.overlay.style.display = "block";
 };
 
 const closeMobileNavHandler = () => {
   // conssole.log("th")
   DOMElements.mobileNav.style.display = "none";
   DOMElements.overlay.style.position = "static";
+  DOMElements.overlay.style.display = "none";
 };
 
 const closeOverlayHandler = () => {
@@ -201,6 +205,7 @@ myMobileAccountBtnHandler = () => {
   );
   DOMElements.myAccountNav.classList.add("mobile-my-account-nav");
   DOMElements.overlay.style.position = "fixed";
+  DOMElements.overlay.style.display = "block";
 };
 
 DOMElements.navIcon.addEventListener("click", () => {
@@ -252,8 +257,8 @@ const orderBtnHandler = (btn) => {
       </div>
     </div>
   `;
-  DOMElements.overlay.style.backgroundColor = "rgba(255, 255, 255, 0.822)";
   DOMElements.overlay.style.position = "fixed";
+  DOMElements.overlay.style.display = "block";
   console.log(btn.closest("section"));
 
   document.body.insertAdjacentHTML("afterbegin", orderElement);
@@ -266,7 +271,7 @@ const orderBtnHandler = (btn) => {
 const closeOrderPopup = () => {
   document.querySelector("#order").remove();
   DOMElements.overlay.style.position = "static";
-  DOMElements.overlay.style.backgroundColor = "rgba(112, 112, 112, 0.055)";
+  DOMElements.overlay.style.display = "block";
 };
 
 window.onload = function () {

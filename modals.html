@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modals</title>
+</head>
+<body style="text-align: center;">
+  <p>Email verification complete</p>
+  <style>
+    #email-verify-modal {
+      width: 30rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+      margin: 4rem auto;
+      padding: 1rem 0;
+    }
+    #email-verify-modal svg {
+      width: 4rem;
+      color: #009300;
+    }
+
+    #email-verify-modal button a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+   }
+
+    #email-verify-modal p {
+      font-size: 1.2rem;
+      color: #707070;
+      font-weight: 600;
+      margin: 8px 0;
+    }
+
+    button {
+      width: 12rem;
+      height: 3rem;
+      border-radius: 9px;
+      border: none;
+      background-color: #BA0C2E;
+    }
+  </style>
+  <div id="email-verify-modal">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+    <p>Thank you</p>
+    <button><a href="#">Back to my account</a></button>
+  </div>
+
+  <p>Cannot enter in account without verification</p>
+  <style>
+    #deny-account-access {
+        width: 30rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+        margin: 4rem auto;
+        padding: 1rem 0;
+    }
+
+    #deny-account-access button a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #deny-account-access p {
+      font-size: 1.2rem;
+        color: #707070;
+        font-weight: 600;
+        margin: 8px 0;
+    }
+
+    button {
+        width: 12rem;
+        height: 3rem;
+        border-radius: 9px;
+        border: none;
+        background-color: #BA0C2E;
+    }
+
+    #deny-account-access .cancel-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #BA0C2E;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+    #deny-account-access svg {
+        width: 50%;
+        color: #ffffff;
+    }
+
+  </style>
+  <div id="deny-account-access">
+    <div class="cancel-icon">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+    </div>
+    <p>Please introduce the code sent to your mail</p>
+    <button><a href="#">Verify email</a></button>
+  </div>
+
+  <p>Access denied (age below 16)</p>
+  <style>
+    #age-restriction-modal {
+      width: 30rem;
+      padding: 1rem 0;
+      color: #707070;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+      margin: 4rem auto;
+    }
+
+    #age-restriction-modal span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    #deny-account-access p {
+      font-size: 1.2rem;
+        font-weight: 600;
+        margin: 8px 0;
+    }
+
+
+  </style>
+  <div id="age-restriction-modal">
+    <span>Sorry</span>
+    <p>You are below 16 years old. Your account has been rejected</p>
+  </div>
+
+  <p>Transaction successfull</p>
+  <style>
+    #transaction-success-modal {
+      width: 30rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+      margin: 4rem auto;
+      padding: 1rem 0;
+    }
+    #transaction-success-modal svg {
+      width: 4rem;
+      color: #009300;
+    }
+
+    #transaction-success-modal p {
+      font-size: 1.2rem;
+      color: #707070;
+      font-weight: 600;
+    }
+  </style>
+  <div id="transaction-success-modal">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+    <p>Transasction has been made successfully</p>
+    <p>Thank you</p>
+  </div>
+
+  <p>Transaction failed</p>
+  <style>
+    #transaction-fail-modal {
+      width: 30rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+      margin: 4rem auto;
+      padding: 1rem 0;
+    }
+
+    #transaction-fail-modal p {
+      font-size: 1.2rem;
+      color: #707070;
+      font-weight: 600;
+    }
+
+    #transaction-fail-modal .cancel-icon {
+      width: 4rem;
+      height: 4rem;
+      background-color: #BA0C2E;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    #transaction-fail-modal svg {
+        width: 50%;
+        color: #ffffff;
+    }
+
+  </style>
+  <div id="transaction-fail-modal">
+    <div class="cancel-icon">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+    </div>
+    <p>Transaction has not been made successfully</p>
+    <p>Please try again</p>
+  </div>
+
+  <p>Not found error</p>
+  <style>
+      #not-found-modal {
+      width: 15rem;
+      padding: 1rem 0;
+      color: #707070;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.164);
+      margin: 4rem auto;
+    }
+
+    #not-found-modal span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    #not-found-modal p {
+      font-size: 1.2rem;
+        font-weight: 600;
+        margin: 8px 0;
+    }
+  </style>
+  <div id="not-found-modal">
+    <span>Sorry</span>
+    <p>Nothing has been found</p>
+  </div>
+</body>
+</html>

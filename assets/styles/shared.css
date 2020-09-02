@@ -25,6 +25,7 @@ h2 {
 
 body {
   background-color: rgb(242, 242, 242);
+  min-height: 100vh;
   margin: 0;
   text-align: center;
   width: 100%;
@@ -336,9 +337,8 @@ button.close-nav-btn svg {
   width: 100%;
   z-index: 400;
   transition: 0.5s;
-  background-color: rgba(112, 112, 112, 0.055);
-  /* background-color: rgba(255, 255, 255, 0.822); */
-
+  background-color: rgba(112, 112, 112, 0.5);
+  display: none;
 }
 
 .mobile-nav {
