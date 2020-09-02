@@ -686,6 +686,20 @@ button:focus {
   margin-right: 10px;
 }
 
+/**************************************/ 
+/************Privacy terms*************/
+/**************************************/ 
+.privacy-terms {
+  position: relative;
+}
+
+.privacy {
+  position: absolute;
+  right: -148px;
+  bottom: -174px;
+  width: 300px;
+}
+
 /*******************************/ 
 /************Footer*************/
 /*******************************/
@@ -797,6 +811,11 @@ address {
   #nav-list {
     display: none;
   }
+
+  .privacy {
+    bottom: -155px;
+    width: 234px;
+}
 
   footer {
     padding: 10px;

@@ -156,16 +156,6 @@ p.limited-offer {
   }
 }
 
-.privacy-terms {
-  position: relative;
-}
-
-.privacy {
-  position: absolute;
-  right: -148px;
-  bottom: -174px;
-  width: 300px;
-}
 
 @media (max-width: 380px) {
   .login,

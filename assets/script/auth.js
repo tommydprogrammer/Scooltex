@@ -10,12 +10,6 @@ const DOMElements = {
   mobileNavAccount: document.querySelector(".mobile-nav__myaccount"),
   pagesNav: document.querySelector(".pages-nav"),
   closeAccountNav: document.querySelector(".close-account-nav"),
-//   indicators: document.querySelectorAll(".indicator"),
-//   slides: document.querySelectorAll(".carousel-item"),
-//   carouselContainer: document.querySelector(".carousel"),
-//   activeCarousel: document.querySelector(".carousel-item.active"),
-//   activeIndicator: document.querySelector(".indicator.active"),
-//   orderBtn: document.querySelectorAll(".order-btn"),
 };
 
 const navBtnHandler = () => {
@@ -99,9 +93,6 @@ DOMElements.mobileNavAccount.addEventListener(
   "click",
   myMobileAccountBtnHandler
 );
-// DOMElements.orderBtn.forEach((btn) =>
-//   btn.addEventListener("click", orderBtnHandler.bind(null, btn))
-// );
 
 // Get name of file uploaded and render it in the DOM
 let fileInput = document.querySelectorAll(".upload");

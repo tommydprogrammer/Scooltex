@@ -160,20 +160,6 @@ p.limited-offer {
   font-size: 1.1rem;
 }
 
-
-.privacy-terms {
-  position: relative;
-}
-
-.privacy {
-  position: absolute;
-  right: -148px;
-  bottom: -174px;
-  width: 300px;
-}
-
-
-
 @media (max-width: 425px) {
  .product-list {
    display: flex;

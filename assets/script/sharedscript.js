@@ -36,6 +36,11 @@ window.onscroll = function () {
   stickyNavHandler();
 };
 
+
+/********************************************/ 
+/************Carousel Controller*************/
+/********************************************/ 
+
 console.log(DOMElements.activeCarousel);
 
 var currentSlide = 1;
@@ -61,6 +66,10 @@ function showSlide(slideIndex, clicked) {
 
   currentSlide++;
 }
+
+/***************************************************/ 
+/************Mobile Carousel Controller*************/
+/***************************************************/ 
 
 var xDown = null;
 var yDown = null;
@@ -91,6 +100,12 @@ function handleTouchMove(evt) {
     if (xDiff > 0) {
       /* left swipe */
       currentSlide++;
+
+      if (currentSlide >= DOMElements.slides.length) {
+        currentSlide = 0;
+        console.log("reset");
+      }
+
       DOMElements.activeCarousel.classList.remove("active");
       DOMElements.activeIndicator.classList.remove("active");
     
@@ -104,8 +119,8 @@ function handleTouchMove(evt) {
       /* right swipe */
       currentSlide--;
       
-      if (currentSlide >= DOMElements.slides.length) {
-        currentSlide = 0;
+      if (currentSlide < 0) {
+        currentSlide = DOMElements.slides.length;
         console.log("reset");
       }
       DOMElements.activeCarousel.classList.remove("active");
@@ -117,12 +132,6 @@ function handleTouchMove(evt) {
       DOMElements.activeCarousel = DOMElements.slides[currentSlide];
       DOMElements.activeIndicator = DOMElements.indicators[currentSlide];
     
-    }
-  } else {
-    if (yDiff > 0) {
-      /* up swipe */
-    } else {
-      /* down swipe */
     }
   }
   /* reset values */
