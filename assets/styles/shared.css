@@ -800,7 +800,9 @@ address {
 
   footer {
     padding: 10px;
+    font-size: 0.8rem;
   }
+
   .footer-nav.copywright {
     display: flex;
     justify-content: space-between;

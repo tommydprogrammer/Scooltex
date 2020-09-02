@@ -57,7 +57,7 @@
   background: no-repeat center/cover url(../images/movie\ image.jpg);
 }
 
- .top-product-sample {
+.top-product-sample {
   overflow: hidden;
   position: relative;
 }
@@ -67,10 +67,9 @@
   position: absolute;
   bottom: -5rem;
   left: -2rem;
-} 
+}
 
 /************* Product  List*************/
-
 
 .product-list {
   display: flex;
@@ -82,7 +81,6 @@
   row-gap: 3rem;
   padding: 0;
 }
-
 
 .product-item {
   text-align: left;
@@ -121,11 +119,12 @@
   margin: 0;
 }
 
-.top-product-brand p, .brand-name {
+.top-product-brand p,
+.brand-name {
   font-weight: 700;
 }
 
-.product-item h2{
+.product-item h2 {
   font-weight: 700;
   font-size: 0.94rem;
 }
@@ -147,32 +146,30 @@ p.limited-offer {
 
 @media (max-width: 425px) {
   .product-list {
-      display: flex;
-      justify-content: flex-start;
-      overflow-x: auto;
-  }
-  
-  .product-item {
-      min-width: 13.8rem;
-  }
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
   }
 
+  .product-item {
+    min-width: 13.8rem;
+  }
+}
+
 .privacy-terms {
-  width: 100%;
-  height: 21px;
-  display: block;
   position: relative;
 }
 
 .privacy {
   position: absolute;
   right: -148px;
-  top: -204px;
+  bottom: -174px;
   width: 300px;
 }
 
 @media (max-width: 380px) {
-  .login, .register {
+  .login,
+  .register {
     max-width: 300px;
   }
- }
+}
