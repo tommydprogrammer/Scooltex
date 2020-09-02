@@ -397,8 +397,14 @@ a.mobile-nav__register {
   color: #ffffff;
 }
 
+
 .mobile-nav a:hover {
   color: rgb(223, 54, 54);
+}
+
+a.mobile-nav__register:hover {
+  background-color: var(--red-color);
+  color: #ffffff;
 }
 
 .mobile-nav__myaccount {
@@ -509,8 +515,6 @@ div#order .cta {
 }
 
 
-
-
 /*******************************/ 
 /************Intro*************/
 /*******************************/
@@ -608,7 +612,6 @@ button:focus {
 }
 
 @media (max-width: 425px) {
-
   #intro {
     height: auto;
   }
@@ -617,17 +620,13 @@ button:focus {
     grid-template-columns: 1fr;
       grid-template-rows: 17.5rem 14rem;
   }
- 
- }
+}
 
- /************* User Access *************/
+/************************************/ 
+/************User Access*************/
+/************************************/ 
 
 #user-access {
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(17.7rem, 1fr)); */
-  /* grid-column-gap: 1.5rem; */
-  /* row-gap: 2.5rem; */
-  /* grid-template-rows: 10rem; */
   color: #ffffff;
   margin: 3.5rem auto;
   overflow-x: auto;
@@ -670,8 +669,7 @@ button:focus {
   font-size: 0.9rem;
 }
 
-
-.register, .login {
+#user-access .register, #user-access .login {
   text-align: left;
   border-radius: 20px;
   padding: 0 1.2rem;
@@ -691,7 +689,6 @@ button:focus {
 /*******************************/ 
 /************Footer*************/
 /*******************************/
-
 
 footer {
   background-color: var(--red-color);
@@ -728,6 +725,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 5rem;
 }
 
 .footer-nav .more {
@@ -759,13 +757,54 @@ address {
   font-weight: 600;
 }
 
+@media (max-width: 780px) {
+
+  .topmost-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .topmost-bar form {
+    width: 81%;
+  }
+
+
+  #nav-icon {
+    position: static;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .main-nav-list {
+    padding: 0 0.7rem;
+
+}
+
+  .main-nav-list li {
+    height: 2rem;
+}
+
+.main-nav-list li a {
+  font-size: 0.8rem;
+}
+
+}
+
 @media (max-width: 425px) {
+  #nav-list {
+    display: none;
+  }
+
   footer {
     padding: 10px;
   }
   .footer-nav.copywright {
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
   }
   
   .footer-nav {
@@ -782,26 +821,9 @@ address {
     margin-left: 0;
     margin: 10px 0;
 }
- }
 
-@media (max-width: 780px) {
-  #nav-list {
-    display: none;
-  }
-
-  .topmost-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
-
-  .topmost-bar form {
-    width: 81%;
-  }
-
-
-  #nav-icon {
-    position: static;
+  .footer-nav:first-of-type {
+    height: 14rem;
   }
 
   .contact {
