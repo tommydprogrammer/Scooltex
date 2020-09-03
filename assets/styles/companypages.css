@@ -100,7 +100,7 @@ main button {
 .auth-btn {
   background-color: var(--red-color);
   color: #ffffff;
-  margin: 3rem 0 1.4rem 0 !important;
+  margin: 3rem 0 1.4rem 0;
   font-size: 1.2rem;
   font-weight: 700;
   /* padding: 0; */
@@ -128,13 +128,11 @@ input.account-setting {
 }
 
 textarea {
-  height: 9rem;
+  height: 8.4rem;
   padding-top: 0.6rem;
 }
 
-main form input:not(:first-of-type),
-textarea,
-select {
+main form label:not(:first-of-type) {
   margin-top: 1.4rem;
 }
 
@@ -157,6 +155,7 @@ input[type="checkbox"] {
   background-color: #ffffff;
   width: 1rem;
   height: 1rem;
+  min-width: 1rem;
   appearance: none;
   padding: 0;
   border-radius: 5px;
@@ -213,7 +212,7 @@ div.information-privacy p {
 }
 
 label {
-  display: none;
+  width: 100%;
 }
 
 /****************************/
@@ -226,6 +225,46 @@ label {
   margin-top: 3rem;
 }
 
+label[for="upload"] {
+  height: 8.4rem;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+label[for="upload"] div p {
+  margin: 0 0 5px 0;
+}
+
+.upload {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.file-name {
+  display: none;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.show-file-name {
+  display: block;
+}
 /****************************/
 /*********Career page********/
 /****************************/
@@ -249,6 +288,28 @@ main.career-page p {
   font-weight: 700;
 }
 
+.error,
+label.error {
+  border: 1px solid var(--red-color);
+}
+
+.error-text {
+  color: var(--red-color);
+  font-size: 0.7rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 3px;
+  /* display: none; */
+}
+
+label[for="upload"] .error-text {
+  top: 134px;
+  right: 0px;
+  position: absolute;
+}
+
 @media (max-width: 425px) {
   main {
     padding: 1rem 8px;
@@ -257,6 +318,7 @@ main.career-page p {
   .heading {
     font-size: 1.6rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
   main form {
@@ -264,10 +326,26 @@ main.career-page p {
   }
 
   main form input {
-    width: 100%;
     height: 2.5rem;
+  }
+
+  main form input,
+  textarea,
+  select,
+  label[for="upload"] div p,
+  .text-area-limit {
     font-size: 0.7rem;
   }
+
+  .message {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+form input.auth-btn {
+  margin-top: 1.5rem;
+}
 
   .login-page,
   .reset-email,

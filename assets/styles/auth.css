@@ -231,9 +231,10 @@ label[for="upload"] div p {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  bottom: -47px;
+  bottom: -34px;
   left: 0;
   text-align: left;
+  font-size: 0.9rem;
 }
 
 .show-file-name {

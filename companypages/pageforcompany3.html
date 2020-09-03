@@ -13,7 +13,7 @@
       <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
         <!-- Scripts -->
         <script src="../assets/script/companies.js" defer></script>
-        <!-- <script src="../assets/script/register.js" defer></script> -->
+        <script src="../assets/script/formvalidation.js" defer></script>
         <title>Scooltec - Login</title>
     </head>
     
@@ -95,7 +95,9 @@
         <h1 class="heading">Offers and Discount Details</h1>
         
         <form action="">
-            <input type="text" name="discount-percentage" id="discount-percentage" placeholder="Annual discount procentage"> <!--(this is available throught the year of minimum 5%)"-->
+            <label for="discount-percentage">
+                <input type="text" name="discount-percentage" id="discount-percentage" placeholder="Annual discount procentage"> <!--(this is available throught the year of minimum 5%)"-->
+            </label>
             <label for="upload">
                 <div>
                     <img src="../assets/images/icons/upload icon2.jpg" alt="">
@@ -104,28 +106,34 @@
                 <input class="upload" type="file" name="company-logo" id="company-logo">
                 <p class="file-name"></p>
             </label>
-            <input type="text" name="product-discount" id="product-discount" placeholder="Product discount">
+            <label for="product-discount">
+                <input type="text" name="product-discount" id="product-discount" placeholder="Product discount">
+            </label>
             
-            <label for="type-of-product">Type of product</label>
-            <textarea name="type-of-product" id="type-of-product" cols="30" rows="10" placeholder="Type of products (ex. Sales,Laptops,etc)"></textarea>
-            
-            <!-- <input type="text" name="product-category" id="product-category" placeholder="Product categories">
-            <input type="text" name="offers" id="offers" placeholder="Limited/unlimited offers"> -->
-            <select name="product-category" id="product-category">
-                <option value="" disabled selected hidden>Product category</option>
-                <option value="restaurant">Restaurant</option>
-                <option value="clothes">Clothes</option>
-                <option value="technology">Technology</option>
-                <option value="lifestyle">Lifestyle</option>
-                <option value="hypermarket">Hypermarket</option>
-                <option value="beauty">Beauty</option>
-            </select>
-            <select name="offer" id="offer">
-                <option value="" selected disabled hidden>Limited/unlimited offers</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <input type="date" name="" id="">
+            <label for="type-of-product">
+                <textarea name="type-of-product" id="type-of-product" cols="30" rows="10" placeholder="Type of products (ex. Sales,Laptops,etc)"></textarea>
+            </label>
+            <label for="product-category">
+                <select name="product-category" id="product-category">
+                    <option value="" disabled selected hidden>Product category</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="technology">Technology</option>
+                    <option value="lifestyle">Lifestyle</option>
+                    <option value="hypermarket">Hypermarket</option>
+                    <option value="beauty">Beauty</option>
+                </select>
+            </label>
+            <label for="offer">
+                <select name="offer" id="offer">
+                    <option value="" selected disabled hidden>Limited/unlimited offers</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <label for="date">
+                <input type="date" name="date" id="date">
+            </label>
             <label for="upload">
                 <div>
                     <img src="../assets/images/icons/upload icon2.jpg" alt="">
@@ -136,8 +144,9 @@
             </label>
             <!-- <input type="text" class="text-area" name="company-bibliography" id="company-bibliography" placeholder="Short company bibliografy"> -->
             
-            <label for="company-bibiography">Short company bibliografy</label>
-            <textarea name="company-bibiography" id="company-bibiography" placeholder="Short company bibliografy" cols="30" rows="10"></textarea>
+            <label for="company-bibiography">
+                <textarea name="company-bibiography" id="company-bibiography" placeholder="Short company bibliografy" cols="30" rows="10"></textarea>
+            </label>
             <p class="text-area-limit">3000 caractere ramase</p>
 
             <input class="auth-btn" type="submit" value="Trimite">
@@ -150,8 +159,8 @@
         <nav class="footer-nav">
             <ul class="more">
                 <li><a href="#">ANPC</a></li>
-                <li><a href="#">Companii</a></li>
-                <li><a href="#">Cariera</a></li>
+                <li><a href="../companies.html">Companii</a></li>
+                <li><a href="../companypages/career.html">Cariera</a></li>
             </ul>
             <address class="contact">
                 <img src="../assets/images/icons/facebook-f-brands.svg" alt="">

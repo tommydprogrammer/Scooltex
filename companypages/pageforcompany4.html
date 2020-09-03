@@ -13,7 +13,7 @@
       <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
         <!-- Scripts -->
         <script src="../assets/script/companies.js" defer></script>
-        <!-- <script src="../assets/script/register.js" defer></script> -->
+        <script src="../assets/script/formvalidation.js" defer></script>
         <title>Scooltec - Login</title>
     </head>
     
@@ -95,19 +95,45 @@
         <h1 class="heading">Editare Cont</h1>
 
         <form action="">
-            <input type="text" name="nume" id="nume" placeholder="Nume">
-            <input type="text" name="prenume" id="prenume" placeholder="Prenume">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="text" name="compania" id="compania" placeholder="Compania">
-            <input type="text" name="adresa-companiei" id="adresa-companiei" placeholder="Adresa companiei">
-            <input type="text" name="orasul" id="orasul" placeholder="Orasul">
-            <input type="text" name="codul-postal" id="codul-postal" placeholder="Codul postal">
-            <input type="text" name="judetul" id="judetul" placeholder="Judetul">
-            <input type="text" name="tara" id="tara" placeholder="Tara">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirma adresa de email">
-            <input type="password" name="password" id="password" placeholder="Parola">
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirma parola">
+            <label for="nume">
+                <input type="text" name="nume" id="nume" placeholder="Nume">
+            </label>
+            <label for="prenume">
+                <input type="text" name="prenume" id="prenume" placeholder="Prenume">
+            </label>
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </label>
+            <label for="compania">
+                <input type="text" name="compania" id="compania" placeholder="Compania">
+            </label>
+            <label for="adresa-companiei">
+                <input type="text" name="adresa-companiei" id="adresa-companiei" placeholder="Adresa companiei">
+            </label>
+            <label for="orasul">
+                <input type="text" name="orasul" id="orasul" placeholder="Orasul">
+            </label>
+            <label for="codul-postal"> 
+                <input type="text" name="codul-postal" id="codul-postal" placeholder="Codul postal">
+            </label>
+            <label for="judetal">
+                <input type="text" name="judetul" id="judetul" placeholder="Judetul">
+            </label>
+            <label for="tara">
+                <input type="text" name="tara" id="tara" placeholder="Tara">
+            </label>
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </label>
+            <label for="confirm-email">
+                <input type="email" name="confirm-email" id="confirm-email" placeholder="Confirma adresa de email">
+            </label>
+            <label for="password">
+                <input type="password" name="password" id="password" placeholder="Parola">
+            </label>
+            <label for="confirm-password">
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirma parola">
+            </label>
             <input class="auth-btn" type="submit" value="Salveaza">
         </form>
 
@@ -118,8 +144,8 @@
         <nav class="footer-nav">
             <ul class="more">
                 <li><a href="#">ANPC</a></li>
-                <li><a href="#">Companii</a></li>
-                <li><a href="#">Cariera</a></li>
+                <li><a href="../companies.html">Companii</a></li>
+                <li><a href="../companypages/career.html">Cariera</a></li>
             </ul>
             <address class="contact">
                 <img src="../assets/images/icons/facebook-f-brands.svg" alt="">
