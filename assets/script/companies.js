@@ -32,7 +32,7 @@ const myAccountBtnHandler = () => {
   console.log(DOMElements.sideNavNav);
   DOMElements.sideNavNav.style.display = "none";
   DOMElements.myAccountNav.classList.add("open-account-nav");
-  DOMElements.nav.style.height = "24rem";
+  DOMElements.nav.style.height = "28rem";
 };
 
 const closeAccountNavHandler = () => {
@@ -56,6 +56,7 @@ const mobileNavHandler = () => {
 };
 
 const closeMobileNavHandler = () => {
+  // conssole.log("th")
   DOMElements.mobileNav.style.display = "none";
   DOMElements.overlay.style.position = "static";
   DOMElements.overlay.style.display = "none";
@@ -89,6 +90,16 @@ DOMElements.navIcon.addEventListener("click", () => {
   }
 });
 
+DOMElements.closeNavBtn.addEventListener("click", closeNavBtnHandler);
+DOMElements.overlay.addEventListener("click", closeOverlayHandler);
+DOMElements.myAccountBtn.addEventListener("click", myAccountBtnHandler);
+DOMElements.closeAccountNav.addEventListener("click", closeAccountNavHandler);
+DOMElements.mobileNavAccount.addEventListener(
+  "click",
+  myMobileAccountBtnHandler
+);
+
+
 // Get name of file uploaded and render it in the DOM
 let fileInput = document.querySelectorAll(".upload");
 console.log(fileInput);
@@ -107,11 +118,11 @@ fileInput.forEach((el) => {
 const fileName = fileInput[0].parentNode.querySelector(".file-name");
 console.log(fileName);
 
-DOMElements.closeNavBtn.addEventListener("click", closeNavBtnHandler);
-DOMElements.overlay.addEventListener("click", closeOverlayHandler);
-DOMElements.myAccountBtn.addEventListener("click", myAccountBtnHandler);
-DOMElements.closeAccountNav.addEventListener("click", closeAccountNavHandler);
-DOMElements.mobileNavAccount.addEventListener(
-  "click",
-  myMobileAccountBtnHandler
-);
+// DOMElements.closeNavBtn.addEventListener("click", closeNavBtnHandler);
+// DOMElements.overlay.addEventListener("click", closeOverlayHandler);
+// DOMElements.myAccountBtn.addEventListener("click", myAccountBtnHandler);
+// DOMElements.closeAccountNav.addEventListener("click", closeAccountNavHandler);
+// DOMElements.mobileNavAccount.addEventListener(
+//   "click",
+//   myMobileAccountBtnHandler
+// );
