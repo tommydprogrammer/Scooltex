@@ -209,7 +209,7 @@ myMobileAccountBtnHandler = () => {
 };
 
 DOMElements.navIcon.addEventListener("click", () => {
-  if (window.matchMedia("(max-width: 780px)").matches) {
+  if (window.matchMedia("(max-width: 425px)").matches) {
     mobileNavHandler();
     console.log("here");
   } else {

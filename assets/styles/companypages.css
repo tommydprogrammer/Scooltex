@@ -2,6 +2,10 @@ main {
   color: var(--grey-text-color);
   text-align: center;
   padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 main form {
@@ -32,9 +36,9 @@ header .topmost-bar span p {
 }
 
 header .topmost-bar span hr {
-  width: 2.3rem;
-  margin: 0;
-  transform: rotate(90deg);
+  height: 1.8rem;
+  width: 0;
+  margin: 7px;
   transform-origin: center;
   border: 1px solid var(--grey-text-color);
 }
@@ -44,7 +48,6 @@ header .topmost-bar span hr {
   margin-bottom: 2.5rem;
   font-weight: 700;
   font-size: 1.2rem;
-  color: black;
 }
 
 main a {
@@ -72,7 +75,6 @@ select {
   color: inherit;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
-  /* border-radius: 7px; */
   font-size: 1rem;
   font-weight: 400;
 }
@@ -97,7 +99,7 @@ main button {
   height: 3.5rem;
 }
 
-.auth-btn {
+.auth-btn, .account-setting {
   background-color: var(--red-color);
   color: #ffffff;
   margin: 3rem 0 1.4rem 0;
@@ -105,18 +107,14 @@ main button {
   font-weight: 700;
   /* padding: 0; */
   cursor: pointer;
-  border-radius: 16px;
-  width: auto;
+  border-radius: 10px;
+  /* width: auto; */
   padding: 0 3rem;
 }
 
 .auth-btn:focus,
 main button {
   outline: none;
-}
-
-input.account-setting {
-  margin-top: 4rem !important;
 }
 
 /***********************/
@@ -137,7 +135,8 @@ main form label:not(:first-of-type) {
 }
 
 main form input:focus {
-  outline: 1px solid #686767;
+  outline: none;
+  border: 1px solid #686767;
 }
 
 form input[type="date"]:before {
@@ -215,6 +214,12 @@ label {
   width: 100%;
 }
 
+main.emailverification__page .info-header {
+  font-size: 1rem;
+  width: 122%;
+  margin-bottom: 1.5rem;
+}
+
 /****************************/
 /*******Page for company*****/
 /****************************/
@@ -256,7 +261,7 @@ label[for="upload"] div p {
   width: 100%;
   overflow: hidden;
   position: absolute;
-  bottom: -34px;
+  bottom: -26px;
   left: 0;
   text-align: left;
   font-size: 0.9rem;
@@ -310,13 +315,50 @@ label[for="upload"] .error-text {
   position: absolute;
 }
 
+
+/****************************/
+/*******Discount offer*****/
+/****************************/
+
+main.discount-offer hr {
+  width: 100%;
+  border: 0.5px solid var(--red-color);
+  margin: 21px 0 15px 0;
+}
+
+main.discount-offer p {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p + label {
+  margin-top: 0.4rem !important;
+}
+
+main.discount-offer label[for="upload"] {
+  margin-top: 0;
+}
+
+.more-info {
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 43px;
+}
+
 @media (max-width: 425px) {
   main {
     padding: 1rem 8px;
   }
 
+  header .topmost-bar span p {
+    font-size: 1.3rem;
+  }
+
   .heading {
-    font-size: 1.6rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
@@ -326,9 +368,15 @@ label[for="upload"] .error-text {
   }
 
   main form input {
-    height: 2.5rem;
+    height: 2rem;
   }
 
+  .auth-btn, .account-setting {
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+}
   main form input,
   textarea,
   select,
@@ -341,11 +389,7 @@ label[for="upload"] .error-text {
     font-size: 0.8rem;
     margin-top: 1rem;
     padding: 0 1rem;
-}
-
-form input.auth-btn {
-  margin-top: 1.5rem;
-}
+  }
 
   .login-page,
   .reset-email,
@@ -354,8 +398,13 @@ form input.auth-btn {
   .verification-page input[type="submit"],
   main button a,
   main button,
-  .join-now {
+  .join-now,main a {
     font-size: 1rem;
+  }
+
+  main.emailverification__page .info-header {
+    font-size: 1rem;
+    width: 100%;
   }
 
   main button {

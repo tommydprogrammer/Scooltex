@@ -91,19 +91,55 @@
                 </script>
         </header>
 
-    <main class="login__page">
-        <h1 class="heading">Intra in Cont</h1>
+    <main class="discount-offer">
+        <h1 class="heading">Discount Details</h1>
 
         <form action="">
-            <label for="user-email">
-                <input type="email" name="user-email" id="user-email" placeholder="Adresa de email">
+            <label for="annual-discount">
+                <input type="text" name="annual-discount" id="annual-discount" placeholder="Annual discount (minimum 5%)">
             </label>
-            <label for="user-password">
-                <input type="password" name="user-password" id="user-password" placeholder="Parola">
+            <label for="validity">
+                <select name="validity" id="validity">
+                    <option value="" hidden selected disabled>Valid thru</option>
+                </select>
             </label>
-            <input class="auth-btn" type="submit" value="Intra in cont">
-            <a class="reset" href="./accountreset.html">Nu ai cont?</a>
-            <a href="./signup.html">Inregistreaza-te</a>    
+            <hr>
+            <p>Fill up this for if the offer is limited</p>
+            <label for="offer-discount">
+                <input type="text" name="offer-discount" id="offer-discount" placeholder="Limited offer discount (%)">
+            </label>
+            <label for="offer-name">
+                <input type="text" name="offer-name" id="offer-name" placeholder="Name of the offer">
+            </label>
+            <label for="valid-date">
+                <input type="text" name="valid-date" id="valid-date" placeholder="Valid thru (dd.mm.yyyy)">
+            </label>
+            <label for="voucher-code">
+                <input type="text" name="voucher-code" id="voucher-code" placeholder="Voucher code">
+            </label>
+            <hr>
+            <p>Fill up this form if the offer is unlimited</p>
+            <label for="offer-discount">
+                <input type="text" name="offer-discount" id="offer-discount" placeholder="Unlimited offer discount">
+            </label>
+            <label for="offer-name">
+                <input type="text" name="offer-name" id="offer-name" placeholder="Name of the offer">
+            </label>
+            <label for="voucher-code">
+                <input type="text" name="voucher-code" id="voucher-code" placeholder="Voucher code">
+            </label>
+            <hr>
+            <label for="upload">
+                <div>
+                    <p>Attach organisation LOGO</p>
+                    <img src="../assets/images/icons/upload icon.jpg" alt="">
+                </div>
+                <input class="upload" type="file" name="company-logo" id="company-logo">
+                <p class="file-name"></p>
+            </label>
+
+            <span class="more-info">* The voucher code is apply for student only</span>
+            <input type="submit" class="auth-btn" value="Send">
         </form>
 
     </main>

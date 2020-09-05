@@ -82,7 +82,7 @@ myMobileAccountBtnHandler = () => {
 };
 
 DOMElements.navIcon.addEventListener("click", () => {
-  if (window.matchMedia("(max-width: 780px)").matches) {
+  if (window.matchMedia("(max-width: 425px)").matches) {
     mobileNavHandler();
     console.log("here");
   } else {
@@ -117,12 +117,3 @@ fileInput.forEach((el) => {
 
 const fileName = fileInput[0].parentNode.querySelector(".file-name");
 console.log(fileName);
-
-// DOMElements.closeNavBtn.addEventListener("click", closeNavBtnHandler);
-// DOMElements.overlay.addEventListener("click", closeOverlayHandler);
-// DOMElements.myAccountBtn.addEventListener("click", myAccountBtnHandler);
-// DOMElements.closeAccountNav.addEventListener("click", closeAccountNavHandler);
-// DOMElements.mobileNavAccount.addEventListener(
-//   "click",
-//   myMobileAccountBtnHandler
-// );

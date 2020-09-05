@@ -12,9 +12,9 @@
     <!-- Scripts -->
     <!-- Progress bar plugin  -->
   <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="../assets/script/auth.js" defer></script>
-  <script src="../assets/script/formvalidation.js" defer></script>
-  <title>Account Reset</title>
+    <script src="../assets/script/sharedscript.js" defer></script>
+    <!-- <script src="../assets/script/register.js" defer></script> -->
+    <title>Payment Details</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <nav class="side-nav">
         <span>
             <button class="close-nav-btn">
-                <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/></svg>            
+                <svg enable-background="new 0 0 32 32"  id="Слой_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M17.459,16.014l8.239-8.194c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.391-1.034-0.391-1.428,0  l-8.232,8.187L7.73,6.284c-0.394-0.395-1.034-0.395-1.428,0c-0.394,0.396-0.394,1.037,0,1.432l8.302,8.303l-8.332,8.286  c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.428,0l8.325-8.279l8.275,8.276c0.394,0.395,1.034,0.395,1.428,0  c0.394-0.396,0.394-1.037,0-1.432L17.459,16.014z" fill="currentColor" id="Close"/></svg>
             </button>
             <a class="side-nav__register" href="./signup.html">Register</a>
             <a class="side-nav__login" href="./login.html">Login</a>
@@ -63,10 +63,10 @@
         </nav>
     <header>
         <div class="topmost-bar">
-            <div>
+            <form action="#">
                 <input class="search-bar" type="text" placeholder="Search...">
                 <button class="search-icon"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></button>
-            </div>
+            </form>
             <button id="nav-icon">
                 <hr>
                 <hr>
@@ -102,15 +102,15 @@
             </script>
     </header>
 
-    <main class="login__page">
-        <h1 class="heading">Reset your password</h1>
+    <main class="signup__page">
+        <h1 class="heading">Email verification</h1>
 
         <form action="">
-            <label for="user-email">
-                <input type="email" name="user-email" id="user-email" placeholder="Email address">
-            </label>
-            <input class="reset-email" type="submit" value="Send reset email">
-            <a href="./login.html">Login</a>
+            <input type="text" name="first-name" id="first-name" placeholder="Type your 6 digits code">
+            <input class="account-setting" type="submit" value="Confirm">
+            <!-- <button class="login">
+                <a href="#">Save my setting</a>
+            </button> -->
         </form>
 
     </main>
@@ -120,8 +120,8 @@
         <nav class="footer-nav">
             <ul class="more">
                 <li><a href="#">ANPC</a></li>
-                <li><a href="../companies.html">Companii</a></li>
-                <li><a href="../companypages/career.html">Cariera</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Careers</a></li>
             </ul>
             <address class="contact">
                 <img src="../assets/images/icons/facebook-f-brands.svg" alt="">
