@@ -1,0 +1,417 @@
+main {
+  color: var(--grey-text-color);
+  text-align: center;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem 0;
+  height: 100px;
+}
+
+header .topmost-bar span {
+  grid-area: search-bar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .topmost-bar span p {
+  color: var(--grey-text-color);
+  margin: 1rem 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .topmost-bar span hr {
+  height: 1.8rem;
+  width: 0;
+  margin: 7px;
+  transform-origin: center;
+  border: 1px solid var(--grey-text-color);
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--red-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.login__page a {
+  margin-bottom: 1.4rem;
+}
+
+.login__page .reset {
+  color: black;
+}
+
+main form input,
+textarea,
+select {
+  background-color: transparent;
+  padding-left: 15px;
+  width: 100%;
+  height: 3.5rem;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main button,
+.join-now {
+  border: none;
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+main button a {
+  font: inherit;
+}
+
+main button {
+  background-color: transparent;
+  color: var(--red-color);
+  width: 100%;
+  height: 3.5rem;
+}
+
+.auth-btn, .account-setting {
+  background-color: var(--red-color);
+  color: #ffffff;
+  margin: 3rem 0 1.4rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* padding: 0; */
+  cursor: pointer;
+  border-radius: 10px;
+  /* width: auto; */
+  padding: 0 3rem;
+}
+
+.auth-btn:focus,
+main button {
+  outline: none;
+}
+
+/***********************/
+/*******signup page*****/
+/***********************/
+
+.signup__page .join-now {
+  margin-top: 0;
+}
+
+textarea {
+  height: 8.4rem;
+  padding-top: 0.6rem;
+}
+
+main form label:not(:first-of-type) {
+  margin-top: 1.4rem;
+}
+
+main form input:focus {
+  outline: none;
+  border: 1px solid #686767;
+}
+
+form input[type="date"]:before {
+  content: attr(placeholder) !important;
+}
+
+form input[type="date"]:focus:before,
+form input[type="date"]:valid:before {
+  content: "";
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  margin-right: 0.51rem;
+  background-color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  appearance: none;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+}
+
+.text-area-limit {
+  text-align: right;
+  margin: 0;
+  font: inherit;
+  width: 100%;
+  font-weight: 400;
+}
+
+.checkbox a {
+  font: inherit;
+}
+
+form input[type="checkbox"]:focus {
+  outline: none;
+}
+
+form input[type="checkbox"]:checked {
+  background-color: var(--red-color);
+}
+
+.checkbox span,
+div.information-privacy p {
+  font-size: 0.7rem;
+}
+
+.checkbox {
+  display: flex;
+  margin: 3.5rem 0 2rem 0;
+}
+
+label[for="terms"] {
+  text-align: left;
+  width: 100%;
+}
+
+div.information-privacy {
+  display: flex;
+}
+
+div.information-privacy img {
+  height: 1rem;
+  margin-right: 0.51rem;
+}
+
+div.information-privacy p {
+  margin: 0;
+  text-align: left;
+}
+
+label {
+  width: 100%;
+}
+
+main.emailverification__page .info-header {
+  font-size: 1rem;
+  width: 122%;
+  margin-bottom: 1.5rem;
+}
+
+/****************************/
+/*******Page for company*****/
+/****************************/
+
+.message {
+  padding: 0 4rem;
+  text-align: left;
+  margin-top: 3rem;
+}
+
+label[for="upload"] {
+  height: 8.4rem;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+label[for="upload"] div p {
+  margin: 0 0 5px 0;
+}
+
+.upload {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.file-name {
+  display: none;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.show-file-name {
+  display: block;
+}
+/****************************/
+/*********Career page********/
+/****************************/
+main.career-page {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main.career-page div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+main.career-page p {
+  color: var(--red-color);
+  margin: 0.3rem 0;
+  font-weight: 700;
+}
+
+.error,
+label.error {
+  border: 1px solid var(--red-color);
+}
+
+.error-text {
+  color: var(--red-color);
+  font-size: 0.7rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 3px;
+  /* display: none; */
+}
+
+label[for="upload"] .error-text {
+  top: 134px;
+  right: 0px;
+  position: absolute;
+}
+
+
+/****************************/
+/*******Discount offer*****/
+/****************************/
+
+main.discount-offer hr {
+  width: 100%;
+  border: 0.5px solid var(--red-color);
+  margin: 21px 0 15px 0;
+}
+
+main.discount-offer p {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p + label {
+  margin-top: 0.4rem !important;
+}
+
+main.discount-offer label[for="upload"] {
+  margin-top: 0;
+}
+
+.more-info {
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 43px;
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 1rem 8px;
+  }
+
+  header .topmost-bar span p {
+    font-size: 1.3rem;
+  }
+
+  .heading {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  main form {
+    width: 100%;
+  }
+
+  main form input {
+    height: 2rem;
+  }
+
+  .auth-btn, .account-setting {
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+}
+  main form input,
+  textarea,
+  select,
+  label[for="upload"] div p,
+  .text-area-limit {
+    font-size: 0.7rem;
+  }
+
+  .message {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .login-page,
+  .reset-email,
+  .join-now,
+  .account-setting,
+  .verification-page input[type="submit"],
+  main button a,
+  main button,
+  .join-now,main a {
+    font-size: 1rem;
+  }
+
+  main.emailverification__page .info-header {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  main button {
+    height: 2.5rem;
+  }
+
+  main form input:not(:first-of-type) {
+    margin-top: 0.6rem;
+  }
+}

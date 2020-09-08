@@ -1,0 +1,129 @@
+/* header */
+
+header {
+  padding: 1rem 0;
+}
+
+header .topmost-bar span {
+  grid-area: search-bar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .topmost-bar span p {
+  color: var(--grey-text-color);
+  margin: 1rem 0;
+  font-weight: 700;
+  /* display: inline-block; */
+  font-size: 1.5rem;
+}
+
+header .topmost-bar span hr {
+  width: 2.3rem;
+  margin: 0;
+  transform: rotate(90deg);
+  transform-origin: center;
+  /* height: 2px; */
+  border: 1px solid var(--grey-text-color);
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+main h2 {
+  color: #1d0c9e;
+  margin: 2rem 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+main p {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 64%;
+}
+
+#top {
+  padding: 7rem 9rem 1rem 9rem;
+  background: no-repeat center url(../images/lady\ with\ book.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#bottom {
+  padding: 1rem 9rem 3rem 9rem;
+  position: relative;
+  background: no-repeat center url(../images/grad\ cap.jpg);
+  background-size: cover;
+}
+
+#top div:nth-of-type(2),
+#bottom div:nth-of-type(2) {
+  position: relative;
+}
+
+#top div:nth-of-type(2) p {
+  width: 106%;
+}
+
+.overlay-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.281);
+  width: 100%;
+  height: 100%;
+}
+
+#bottom span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#bottom a.btn {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 780px) {
+    #top, #bottom {
+        padding: 4rem 3rem 1rem 3rem;
+    }
+
+    main p {
+        width: 100%;
+    }
+}
+    
+
+@media (max-width: 425px) {
+  #top, #bottom {
+    padding: 2rem 1rem;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  main p {
+    font-size: 1rem;
+    width: 100% !important;
+  }
+
+  #bottom span {
+    margin: 3rem 0;
+}
+
+#bottom a.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+}

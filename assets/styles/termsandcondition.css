@@ -1,0 +1,58 @@
+main {
+    max-width: 33rem;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 4.5rem;
+}
+
+main h1 {
+    color: black;
+    margin: 4.5rem 0;
+}
+
+h2, main p {
+    color: var(--grey-text-color);
+    text-align: left;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 2.5rem;
+}
+
+hr {
+    margin: 4.5rem 0 1rem 0;
+    border: 2px solid var(--red-color);
+}
+
+p a {
+    color: var(--red-color);
+}
+
+/* p {
+    color: var(--grey-text-color);
+} */
+
+@media (max-width: 425px) {
+    main {
+        padding: 0 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    main h1 {
+        margin: 2.5rem 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    hr {
+        margin: 2rem 0 0.5rem 0;
+    }
+}

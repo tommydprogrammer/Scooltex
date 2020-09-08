@@ -1,0 +1,383 @@
+main {
+  color: var(--grey-text-color);
+  text-align: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--red-color);
+}
+
+label {
+  width: 100%;
+}
+
+main form input {
+  background-color: transparent;
+  padding-left: 11px;
+  width: 100%;
+  height: 3.5rem;
+  color: inherit;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+label:not(:first-of-type) {
+  margin-top: 1.4rem;
+}
+
+main form input:focus {
+  outline: none;
+  border: 1px solid #686767;
+}
+
+form input[type="date"] {
+  margin-bottom: 3rem;
+}
+
+form input[type="date"]:before {
+  content: attr(placeholder) !important;
+}
+
+form input[type="date"]:focus:before,
+form input[type="date"]:valid:before {
+  content: "";
+}
+
+input[type="checkbox"] {
+  margin: 0;
+  margin-right: 0.51rem;
+  background-color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  appearance: none;
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+}
+
+.checkbox a {
+  color: var(--red-color);
+  text-decoration: none;
+}
+
+form input[type="checkbox"]:focus {
+  outline: none;
+}
+
+form input[type="checkbox"]:checked {
+  background-color: var(--red-color);
+}
+
+.checkbox span, .checkbox span a {
+  font-size: 0.7rem;
+}
+
+.checkbox {
+  display: flex;
+  margin: 3.5rem 0;
+}
+
+label[for="terms"] {
+  text-align: left;
+}
+
+.encrypt-info {
+  display: flex;
+  left: -46px;
+  position: relative;
+  align-items: center;
+}
+
+.join-now {
+  border: none;
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+main a {
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.join-now:focus {
+  outline: none;
+}
+
+/* .login-page,
+.reset-email,
+.join-now,
+.account-setting,
+.verification-page */
+ input[type="submit"] {
+  background-color: var(--red-color);
+  color: #ffffff;
+  margin: 3rem 0 1.4rem 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+}
+
+.verification-page__info-heading {
+  font-size: 1.2rem;
+  width: 122%;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+.verification-page__info-heading span {
+  border-bottom: 2px solid red;
+}
+
+.select-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  width: 100%;
+  grid-template-rows: 3.5rem;
+  margin-top: 1.4rem;
+}
+
+#year-of-study,
+#course-leight {
+  width: 100%;
+  height: 100%;
+  padding: 0 11px 0 11px;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+input[type="file"] {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+label[for="upload"] {
+  /* width: 100%; */
+  height: 8.4rem;
+  padding: 0 11px 11px 11px;
+  color: inherit;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.4rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+label[for="upload"] div p {
+  margin: 0 0 5px 0;
+}
+
+.verification-page hr {
+  border: 1px solid var(--grey-text-color);
+  width: 100%;
+  margin: 3rem 0 2rem 0;
+}
+
+.file-name {
+  display: none;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.show-file-name {
+  display: block;
+}
+
+.verification-page form h2 {
+  font: inherit;
+  color: black;
+  margin: 3rem 0 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+/*Account settings page */
+main.account-settings hr {
+  width: 100%;
+  border: 0.5px solid var(--grey-text-color);
+  margin: 16px 0;
+}
+
+main.account-settings p {
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+label[for="same-address"],
+label[for="diff-address"],
+main.account-settings p.delivery-address {
+  text-align: left;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+main.account-settings p.delivery-address {
+  margin-bottom: 10px;
+}
+
+label[for="same-address"] input,
+label[for="diff-address"] input {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/****************************/
+/*******Payment details*****/
+/****************************/
+
+main.payment-details div {
+  text-align: left;
+  border-top: 1px solid var(--grey-text-color);
+  margin-top: 25px;
+  width: 100%;
+} 
+
+main.payment-details div span {
+  display: block;
+    margin-bottom: 3px;
+}
+
+main.payment-details div p {
+  color: var(--red-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+main.payment-details div .total {
+  color: var(--red-color);
+  font-weight: 700;
+}
+
+main.payment-details .more-info {
+  color: var(--red-color);
+  font-weight: 700;
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 1rem 8px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  main form {
+    width: 100%;
+  }
+
+  main form input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+
+  #year-of-study,
+  #course-leight,
+  label[for="upload"] {
+    font-size: 0.7rem;
+  }
+
+  .checkbox {
+    margin: 0;
+  }
+
+  .verification-page__info-heading {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .login-page,
+  .reset-email,
+  .join-now,
+  .account-setting,
+  .verification-page input[type="submit"],
+  main a,
+  .join-now {
+    font-size: 1rem;
+  }
+  
+  .login-page {
+    margin: 2.5rem 0 1.4rem 0;
+  }
+
+  label:not(:first-of-type) {
+    margin-top: 0.6rem;
+  }
+
+  label[for="same-address"] input,
+  label[for="diff-address"] input {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  label[for="same-address"],
+  label[for="diff-address"],
+  main.account-settings p.delivery-address {
+    font-size: 0.8rem;
+  }
+}
+
+.error {
+  border: 1px solid var(--red-color);
+}
+
+.error + span {
+  color: var(--red-color);
+  font-size: 0.7rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 3px;
+}
